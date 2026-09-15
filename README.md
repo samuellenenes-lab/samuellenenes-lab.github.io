@@ -1,2 +1,2 @@
-# Site perso · Samuel Le Nenes
+# Site perso Samuel Le Nenes
 
