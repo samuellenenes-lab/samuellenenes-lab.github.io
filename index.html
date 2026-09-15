@@ -1,111 +1,257 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Samuel Le Nenes - Portfolio & Data Analyse</title>
-    <!-- Chargement de Tailwind CSS pour un design moderne et sobre -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        /* Ajout d'une police sobre et moderne */
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
-        body { font-family: 'Inter', sans-serif; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Samuel Le Nenes | Recherche de Stage en Data Analyse</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+https://fonts.googleapis.com
+https://fonts.gstatic.com
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;900&display=swap
+
+<style>
+body{
+    font-family:'Inter',sans-serif;
+}
+</style>
+
 </head>
-<body class="bg-slate-50 text-slate-800 antialiased selection:bg-blue-200 selection:text-blue-900">
 
-    <!-- En-tête / Hero Section -->
-    <header class="bg-white border-b border-slate-200 shadow-sm relative overflow-hidden">
-        <!-- Décoration visuelle bleue discrète -->
-        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-400 to-blue-600"></div>
-        <div class="max-w-5xl mx-auto px-6 py-20 text-center">
-            <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight">Samuel Le Nenes</h1>
-            <p class="mt-4 text-xl text-blue-600 font-semibold tracking-wide uppercase text-sm">
-                Étudiant en M1 Économétrie Appliquée (ECAP) | Recherche de stage
-            </p>
-            <p class="mt-4 text-slate-600 max-w-2xl mx-auto leading-relaxed">
-                Spécialisé dans l'analyse de données économiques, la modélisation quantitative et l'économétrie. 
-                Je combine rigueur analytique et maîtrise des outils de développement (modélisation spatiale, séries temporelles, IA) 
-                pour concevoir des solutions d'aide à la décision.
-            </p>
+<body class="bg-slate-50 text-slate-800">
+
+<!-- HERO -->
+
+<header class="relative overflow-hidden bg-slate-900 text-white">
+
+    <div class="absolute inset-0">
+        <div class="absolute w-96 h-96 bg-cyan-500/20 blur-3xl rounded-full -top-20 -left-20"></div>
+        <div class="absolute w-96 h-96 bg-indigo-500/20 blur-3xl rounded-full bottom-0 right-0"></div>
+    </div>
+
+    <div class="relative max-w-6xl mx-auto px-6 py-28">
+
+        <span class="inline-flex items-center px-4 py-2 rounded-full bg-cyan-500/10 border border-cyan-400/20 text-cyan-300 text-sm font-semibold">
+            Recherche de stage en Data Analyse & Économétrie
+        </span>
+
+        <h1 class="mt-8 text-5xl md:text-7xl font-black leading-tight">
+            Samuel Le Nenes
+        </h1>
+
+        <p class="mt-6 max-w-3xl text-xl text-slate-300 leading-relaxed">
+            Étudiant en Master 1 Économétrie Appliquée (ECAP), je développe
+            des compétences en modélisation statistique, analyse de données,
+            séries temporelles et intelligence artificielle afin de transformer
+            les données en outils d'aide à la décision.
+        </p>
+
+        <div class="mt-10 flex flex-wrap gap-4">
+
+            <a href="CV_Samuel_Le_Nenes_Stage.docx"
+               class="px-6 py-3 rounded-xl bg-cyan-500 hover:bg-cyan-400 font-semibold text-slate-900 transitionded-xl border border-slate-600 hover:border-slate-400CHERCHE DE STAGE -->
+
+<section class="max-w-6xl mx-auto px-6 -mt-12 relative z-10">
+
+    <div class="bg-white rounded-3xl shadow-xl p-8 border border-slate-100">
+
+        <div class="grid md:grid-cols-3 gap-8">
+
+            <div>
+                <p class="text-sm uppercase tracking-wider text-cyan-600 font-bold">
+                    Disponibilité
+                </p>
+                <h3 class="mt-2 font-semibold text-lg">
+                    Stage à partir de 2025
+                </h3>
+            </div>
+
+            <div>
+                <p class="text-sm uppercase tracking-wider text-cyan-600 font-bold">
+                    Domaines visés
+                </p>
+                <h3 class="mt-2 font-semibold text-lg">
+                    Data Analyse • Econométrie • BI
+                </h3>
+            </div>
+
+            <div>
+                <p class="text-sm uppercase tracking-wider text-cyan-600 font-bold">
+                    Localisation
+                </p>
+                <h3 class="mt-2 font-semibold text-lg">
+                    Nantes • France
+                </h3>
+            </div>
+
         </div>
-    </header>
 
-    <!-- Contenu Principal -->
-    <main class="max-w-5xl mx-auto px-6 py-12 grid gap-8 md:grid-cols-2">
-        
-        <!-- Colonne Gauche : Profil & Compétences -->
-        <div class="space-y-8">
-            <section class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
-                <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center">
-                    <span class="w-10 h-10 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center mr-4 text-lg">💡</span>
-                    Mes Compétences
-                </h2>
-                <div class="flex flex-wrap gap-2">
-                    <!-- Badges de compétences -->
-                    <span class="bg-slate-100 text-slate-700 px-3 py-1.5 rounded-md text-sm font-medium border border-slate-200">R / RStudio</span>
-                    <span class="bg-slate-100 text-slate-700 px-3 py-1.5 rounded-md text-sm font-medium border border-slate-200">Python</span>
-                    <span class="bg-slate-100 text-slate-700 px-3 py-1.5 rounded-md text-sm font-medium border border-slate-200">Quarto</span>
-                    <span class="bg-slate-100 text-slate-700 px-3 py-1.5 rounded-md text-sm font-medium border border-slate-200">Stata</span>
-                    <span class="bg-slate-100 text-slate-700 px-3 py-1.5 rounded-md text-sm font-medium border border-slate-200">Power BI</span>
-                    <span class="bg-slate-100 text-slate-700 px-3 py-1.5 rounded-md text-sm font-medium border border-slate-200">SQL</span>
-                    <span class="bg-slate-100 text-slate-700 px-3 py-1.5 rounded-md text-sm font-medium border border-slate-200">Docker & Git Bash</span>
-                    <span class="bg-slate-100 text-slate-700 px-3 py-1.5 rounded-md text-sm font-medium border border-slate-200">Prompt Engineering</span>
+    </div>
+
+</section>
+
+<!-- A PROPOS -->
+
+<section class="max-w-6xl mx-auto px-6 py-20">
+
+    <h2 class="text-4xl font-bold mb-8">
+        Mon Profil
+    </h2>
+
+    <div class="bg-white rounded-3xl p-8 shadow-sm border border-slate-100">
+
+        <p class="text-lg leading-relaxed text-slate-600">
+            Après une expérience en direction financière chez Huguet Ingénierie,
+            j'ai choisi de poursuivre ma spécialisation en économétrie appliquée.
+            Mon objectif est de mettre les méthodes quantitatives et les outils
+            de programmation au service de l'analyse économique et de la prise
+            de décision.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- COMPETENCES -->
+
+<section class="max-w-6xl mx-auto px-6 pb-20">
+
+    <h2 class="text-4xl font-bold mb-8">
+        Compétences Techniques
+    </h2>
+
+    <div class="bg-white rounded-3xl p-8 shadow-sm border border-slate-100">
+
+        <div class="grid md:grid-cols-2 gap-8">
+
+            <div>
+
+                <div class="mb-6">
+                    <div class="flex justify-between mb-2">
+                        <span>R / RStudio</span>
+                        <span>★★★★★</span>
+                    </div>
+
+                    <div class="h-3 rounded-full bg-slate-200">
+                        <div class="h-3 rounded-full bg-cyan-500 w-[95%]"></div>
+                    </div>
                 </div>
-            </section>
-        </div>
 
-        <!-- Colonne Droite : Documents à télécharger -->
-        <div class="space-y-8">
-            <section class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
-                <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center">
-                    <span class="w-10 h-10 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center mr-4 text-lg">📄</span>
-                    Documents
-                </h2>
-                <div class="space-y-4">
-                    
-                    <!-- Bouton CV -->
-                    <a href="CV_Samuel_Le_Nenes_Stage.docx" class="group flex items-start p-5 rounded-xl border border-slate-200 hover:border-blue-400 hover:bg-blue-50 transition-all">
-                        <div class="flex-grow">
-                            <h3 class="text-lg font-bold text-slate-900 group-hover:text-blue-700 transition-colors">Mon Curriculum Vitae</h3>
-                            <p class="text-sm text-slate-500 mt-1">Consultez mon parcours académique à l'IAE Nantes et mes expériences professionnelles en direction financière.</p>
-                        </div>
-                        <div class="ml-4 p-2 bg-white rounded-full shadow-sm group-hover:bg-blue-100 transition-colors">
-                            <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
-                            </svg>
-                        </div>
-                    </a>
-                    
-                    <!-- Bouton Note de Synthèse -->
-                    <a href="LE_NENES_Samuel_NoteSynthèse_M1ECAP.pdf" class="group flex items-start p-5 rounded-xl border border-slate-200 hover:border-blue-400 hover:bg-blue-50 transition-all">
-                        <div class="flex-grow">
-                            <h3 class="text-lg font-bold text-slate-900 group-hover:text-blue-700 transition-colors">Note de Synthèse M1 ECAP</h3>
-                            <p class="text-sm text-slate-500 mt-1">Étude économétrique (Logit ordonné) sur l'acceptation des mesures de gestion du risque côtier au Croisic et à Batz-sur-Mer.</p>
-                        </div>
-                        <div class="ml-4 p-2 bg-white rounded-full shadow-sm group-hover:bg-blue-100 transition-colors">
-                            <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
-                            </svg>
-                        </div>
-                    </a>
+                <div class="mb-6">
+                    <div class="flex justify-between mb-2">
+                        <span>Python</span>
+                        <span>★★★★☆</span>
+                    </div>
 
+                    <div class="h-3 rounded-full bg-slate-200">
+                        <div class="h-3 rounded-full bg-cyan-500 w-[85%]"></div>
+                    </div>
                 </div>
-            </section>
+
+                <div class="mb-6">
+                    <div class="flex justify-between mb-2">
+                        <span>SQL</span>
+                        <span>★★★★☆</span>
+                    </div>
+
+                    <div class="h-3 rounded-full bg-slate-200">
+                        <div class="h-3 rounded-full bg-cyan-500 w-[80%]"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="flex flex-wrap gap-3 content-start">
+
+                <span class="px-4 py-2 rounded-xl bg-slate-100">Power BI</span>
+                <span class="px-4 py-2 rounded-xl bg-slate-100">Stata</span>
+                <span class="px-4 py-2 rounded-xl bg-slate-100">Quarto</span>
+                <span class="px-4 py-2 rounded-xl bg-slate-100">Docker</span>
+                <span class="px-4 py-2 rounded-xl bg-slate-100">Git</span>
+                <span class="px-4 py-2 rounded-xl bg-slate-100">Machine Learning</span>
+                <span class="px-4 py-2 rounded-xl bg-slate-100">Séries temporelles</span>
+                <span class="px-4 py-2 rounded-xl bg-slate-100">Econométrie spatiale</span>
+                <span class="px-4 py-2 rounded-xl bg-slate-100">Prompt Engineering</span>
+
+            </div>
+
         </div>
-    </main>
-    
-    <!-- Pied de page -->
-    <footer class="mt-12 py-8 border-t border-slate-200 bg-white">
-        <div class="max-w-5xl mx-auto px-6 text-center text-slate-500 text-sm">
-            <p>📍 44800, Saint Herblain | ✉️ samuel.lenenes@gmail.com | 📞 +33 7 82 46 30 42</p>
-            <p class="mt-4">
-                <a href="https://www.linkedin.com/in/samuel-le-nenes-3884a3337" target="_blank" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
-                    Visiter mon profil LinkedIn
-                    <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                </a>
+
+    </div>
+
+</section>
+
+<!-- DOCUMENTS -->
+
+<section id="documents" class="max-w-6xl mx-auto px-6 pb-20">
+
+    <h2 class="text-4xl font-bold mb-8">
+        Documents
+    </h2>
+
+    <div class="grid md:grid-cols-2 gap-6">
+
+        <a href="CV_Samuel_Le_Nenes_Stage.docx"
+           class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-1slate-600 mt-4">
+                Formation, compétences techniques et expériences
+                en environnement financier et analytique.
             </p>
+
+        </a>
+
+        <a href="LE_NENES_Samuel_NoteSynthèse_M1ECAP.pdf"
+           class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
+600 mt-4">
+                Étude économétrique portant sur l'acceptation des
+                mesures de gestion du risque côtier au Croisic
+                et à Batz-sur-Mer.
+            </p>
+
+        </a>
+
+    </div>
+
+</section>
+
+<!-- CONTACT -->
+
+<footer class="bg-white border-t border-slate-200">
+
+    <div class="max-w-6xl mx-auto px-6 py-12">
+
+        <h2 class="text-3xl font-bold text-center mb-8">
+            Contact
+        </h2>
+
+        <div class="text-center space-y-3 text-slate-600">
+
+            <p>Saint-Herblain (44800)</p>
+
+            <p>
+                samuel.lenenes@gmail.com
+            </p>
+
+            <p>
+                +33 7 82 46 30 42
+            </p>
+
+            <a
+                href="https://www.linkedin.com/in/samuel-le-nenes-3884a3337"
+                target="_blank"
+                class="inline-block mt-4 text-cyan-600 font-semibold hover:text-cyan-700">
+
+                Mon profil LinkedIn
+
+            </a>
+
         </div>
-    </footer>
+
+    </div>
+
+</footer>
+
 </body>
 </html>
