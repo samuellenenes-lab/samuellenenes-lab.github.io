@@ -26,7 +26,7 @@ en: {
     "index.aria.linkedin": "LinkedIn (opens in a new tab)",
     "index.aria.github": "GitHub (opens in a new tab)",
     "index.bio.h1": "About me",
-    "index.badge": "4-month internship, March to June 2027",
+    "index.badge": "Seeking a 4-month internship, March to June 2027",
     "index.bio.p1": "I am a second-year Master's student in <strong>Applied Econometrics (M2 ECAP)</strong> at <a href=\"https://iae.univ-nantes.fr/\" target=\"_blank\" rel=\"noopener\">IAE Nantes</a>, <a href=\"https://www.univ-nantes.fr/\" target=\"_blank\" rel=\"noopener\">Nantes Université</a>.",
     "index.bio.p2": "My work focuses on <strong>economic data analysis and quantitative modelling</strong>: time series, qualitative response models and spatial econometrics. I am looking for a final-year internship in data science, data analysis or econometrics.",
     "index.interests.h": "Interests",
@@ -89,7 +89,7 @@ en: {
     /* ---- cv.html (texte identique au PDF anglais) ---- */
     "cv.title": "CV | Samuel Le Nenes",
     "cv.desc": "CV of Samuel Le Nenes, second-year Master's student in Applied Econometrics (M2 ECAP) at IAE Nantes, looking for a four-month internship from March to June 2027.",
-    "cv.badge": "4-month internship, March to June 2027",
+    "cv.badge": "Seeking a 4-month internship, March to June 2027",
     "cv.role": "M2 ECAP student (Applied Econometrics)",
     "cv.dl": "Download CV (PDF)",
     "cv.open": "Open the PDF",
