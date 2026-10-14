@@ -1,165 +1,183 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>CV · Samuel Le Nenes</title>
-  <meta name="description" content="CV de Samuel Le Nenes, étudiant en M2 Économétrie Appliquée à l'IAE Nantes.">
-  <meta property="og:title" content="Samuel Le Nenes · Économétrie appliquée">
-  <meta property="og:description" content="M2 ECAP à l'IAE Nantes. Recherche un stage de fin d'études en data / économétrie.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://samuellenenes-lab.github.io/assets/img/og-card.png">
-  <meta name="theme-color" content="#0e0f12">
-  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
-  <link rel="preload" href="assets/fonts/instrument-serif-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="cv.title">CV | Samuel Le Nenes</title>
+    <meta name="description" content="CV de Samuel Le Nenes, étudiant en M2 Économétrie Appliquée (ECAP) à l'IAE Nantes, à la recherche d'un stage de 4 mois de mars à juin 2027." data-i18n-attr="content:cv.desc">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/main.js" defer></script>
 </head>
 <body>
 
-<header class="top">
-  <div class="wrap">
-    <a class="logo" href="index.html" aria-label="Accueil">S.L.N</a>
-    <ul class="menu">
-      <li><a href="index.html#profil">Profil</a></li>
-      <li><a href="memoire.html">Mémoire</a></li>
-      <li><a href="cv.html" aria-current="page">CV</a></li>
-      <li><a href="index.html#contact">Contact</a></li>
-    </ul>
-  </div>
-</header>
+    <a class="skip" href="#contenu" data-i18n="a11y.skip">Aller au contenu</a>
+    <nav class="navbar" aria-label="Navigation principale" data-i18n-attr="aria-label:a11y.nav">
+        <div class="wrap">
+            <a href="index.html" class="brand">Samuel Le Nenes</a>
+            <ul class="nav-links">
+                <li class="nav-home"><a href="index.html" data-i18n="nav.home">Accueil</a></li>
+                <li><a href="cv.html" class="active" aria-current="page" data-i18n="nav.cv">CV</a></li>
+                <li><a href="index.html#experiences" data-i18n="nav.exp">Expériences</a></li>
+                <li><a href="index.html#travaux" data-i18n="nav.work">Travaux</a></li>
+                <li><a href="index.html#recommandations" data-i18n="nav.reco">Recommandations</a></li>
+                <li><a href="index.html#competences" data-i18n="nav.skills">Compétences</a></li>
+                <li><a href="index.html#contact" data-i18n="nav.contact">Contact</a></li>
+            </ul>
+            <div class="lang">
+                <button type="button" class="lang-btn" id="lang-btn" aria-haspopup="true" aria-expanded="false" aria-controls="lang-menu" aria-label="Langue : français. Changer de langue" data-i18n-attr="aria-label:lang.button">
+                    <svg class="flag" data-flag="fr" viewBox="0 0 3 2" aria-hidden="true" focusable="false"><rect width="1" height="2" fill="#002654"/><rect x="1" width="1" height="2" fill="#ffffff"/><rect x="2" width="1" height="2" fill="#ce1126"/></svg>
+                    <svg class="flag" data-flag="en" hidden viewBox="0 0 60 30" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><clipPath id="uk-a"><path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z"/></clipPath><rect width="60" height="30" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#ffffff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#uk-a)" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#ffffff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></svg>
+                    <span class="code" data-lang-code>FR</span>
+                    <svg class="caret" viewBox="0 0 10 10" aria-hidden="true" focusable="false"><path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+                </button>
+                <ul class="lang-menu" id="lang-menu" role="menu" aria-labelledby="lang-btn" hidden>
+                    <li role="none"><button type="button" role="menuitemradio" aria-checked="true" data-set-lang="fr" lang="fr"><svg class="flag" viewBox="0 0 3 2" aria-hidden="true" focusable="false"><rect width="1" height="2" fill="#002654"/><rect x="1" width="1" height="2" fill="#ffffff"/><rect x="2" width="1" height="2" fill="#ce1126"/></svg><span class="code">FR</span>Français</button></li>
+                    <li role="none"><button type="button" role="menuitemradio" aria-checked="false" data-set-lang="en" lang="en"><svg class="flag" viewBox="0 0 60 30" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><clipPath id="uk-b"><path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z"/></clipPath><rect width="60" height="30" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#ffffff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#uk-b)" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#ffffff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></svg><span class="code">EN</span>English</button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-<main>
-  <section class="page-head">
-    <canvas class="waves" data-dense="1" aria-hidden="true"></canvas>
-    <div class="wrap">
-      <p class="kick">Curriculum vitae · mis à jour en 2026</p>
-      <h1><span class="split-line"><span>Parcours<em>.</em></span></span></h1>
-      <p class="sub">Économie, finance, puis économétrie appliquée. La version PDF reprend les mêmes informations.</p>
-      <div class="ctas">
-        <a class="cta" href="assets/docs/CV_Samuel_Le_Nenes.pdf" download>CV en PDF <span class="ar">↓</span></a>
-        <a class="cta" href="assets/docs/CV_Samuel_Le_Nenes.pdf" target="_blank" rel="noopener">Ouvrir <span class="ar">→</span></a>
-      </div>
-    </div>
-  </section>
+    <main id="contenu">
+        <section class="wrap page-head">
+            <p><span class="badge" data-i18n="cv.badge">Stage de 4 mois, mars à juin 2027</span></p>
+            <h1>Samuel Le Nenes</h1>
+            <p data-i18n="cv.role">Étudiant en M2 ECAP (Économétrie Appliquée)</p>
+            <p class="links">
+                <a class="cta solid" href="assets/docs/CV_Samuel_Le_Nenes.pdf" data-href-en="assets/docs/CV_Samuel_Le_Nenes_EN.pdf" download data-i18n="cv.dl">CV en PDF</a>
+                <a class="cta" href="assets/docs/CV_Samuel_Le_Nenes.pdf" data-href-en="assets/docs/CV_Samuel_Le_Nenes_EN.pdf" target="_blank" rel="noopener" data-i18n="cv.open">Ouvrir le PDF</a>
+            </p>
+        </section>
 
-  <section class="sec">
-    <div class="wrap cv">
-      <aside class="rv">
-        <h3>Contact</h3>
-        <ul>
-          <li><a href="mailto:samuel.lenenes@gmail.com">samuel.lenenes@gmail.com</a></li>
-          <li><a href="https://www.linkedin.com/in/samuel-le-nenes-3884a3337" target="_blank" rel="noopener">LinkedIn</a></li>
-          <li><a href="https://github.com/samuellenenes-lab" target="_blank" rel="noopener">GitHub</a></li>
-          <li>Saint-Herblain (44)</li>
-        </ul>
-        <h3>Outils</h3>
-        <ul>
-          <li>R · RStudio · Quarto</li>
-          <li>Python</li>
-          <li>Stata</li>
-          <li>Power BI</li>
-          <li>Excel</li>
-        </ul>
-        <h3>Data analyse</h3>
-        <ul>
-          <li>Économétrie</li>
-          <li>Modélisation</li>
-          <li>Visualisation</li>
-        </ul>
-        <h3>Langues</h3>
-        <ul>
-          <li>Français</li>
-          <li>Anglais</li>
-          <li>Espagnol</li>
-          <li>Chinois</li>
-        </ul>
-        <h3>À côté</h3>
-        <ul>
-          <li>Boxe, surf, fitness</li>
-          <li>Voyages : Europe, États-Unis, Afrique du Sud, Seychelles, Dubaï</li>
-        </ul>
-      </aside>
+        <section class="band alt">
+            <div class="wrap">
+                <div><h2 data-i18n="cv.h.profile">Profil</h2></div>
+                <div class="body">
+                    <p data-i18n="cv.profile">Étudiant en Master d'Économétrie Appliquée (ECAP) à l'IAE Nantes, je me spécialise dans l'analyse de données économiques à l'aide d'outils statistiques et informatiques. Mon objectif est de devenir data scientist ou économètre, en combinant mes compétences en économie, analyse et programmation. Après un premier M1 en finance d'entreprise (CAEGR), je me suis réorienté vers l'économétrie. Mes deux stages en direction financière chez WithSecure m'ont appris à produire des analyses fiables sur lesquelles d'autres équipes s'appuient.</p>
+                </div>
+            </div>
+        </section>
 
-      <div>
-        <h2 class="rv">Expériences</h2>
-        <ul class="rows rv" style="isolation:isolate">
-          <li class="row expand">
-            <span class="yr">Avr. → juin 2025</span>
-            <span class="ttl">Stage, direction financière</span>
-            <span class="org">WithSecure · Helsinki, Finlande</span>
-            <span class="plus">+</span>
-            <div class="detail">Participation à la cession de l'activité de conseil (création de présentations). Optimisation des méthodes de calcul des émissions de gaz à effet de serre dans le cadre des normes CSRD. Gestion des relances clients pour la facturation.</div>
-          </li>
-          <li class="row expand">
-            <span class="yr">Janv. → fév. 2024</span>
-            <span class="ttl">Stage, direction financière</span>
-            <span class="org">WithSecure · Helsinki, Finlande</span>
-            <span class="plus">+</span>
-            <div class="detail">Gestion et validation des données clients (Salesforce). Analyses financières : OPEX, chiffre d'affaires, prises de commandes. Relecture du rapport annuel 2023 et vérifications du site Investor Relations.</div>
-          </li>
-          <li class="row expand">
-            <span class="yr">2023 → juin 2026</span>
-            <span class="ttl">Employé polyvalent</span>
-            <span class="org">Fresh Burritos · Atlantis</span>
-            <span class="plus">+</span>
-            <div class="detail">Préparation des commandes, plonge et entretien, relation client et encaissement, dans le respect des normes d'hygiène et de qualité.</div>
-          </li>
-        </ul>
+        <section class="band">
+            <div class="wrap">
+                <div><h2 data-i18n="cv.h.exp">Expériences professionnelles</h2></div>
+                <div>
+                    <article class="work cv-entry">
+                        <span class="when" data-i18n="cv.e1.when">Septembre 2023 - juin 2026</span>
+                        <h3>FB – Atlantis</h3>
+                        <p class="meta" data-i18n="cv.e1.role">Employé polyvalent, en parallèle des études</p>
+                        <p data-i18n="cv.e1.p">Préparation des commandes en cuisine, plonge, nettoyage des espaces de travail et de la salle, gestion de la relation client et encaissement, dans le respect des normes d'hygiène et de qualité.</p>
+                    </article>
+                    <article class="work cv-entry">
+                        <span class="when" data-i18n="cv.e2.when">Avril 2025 - juin 2025</span>
+                        <h3>WithSecure – Helsinki</h3>
+                        <p class="meta" data-i18n="cv.e2.role">Stage au sein de la direction financière</p>
+                        <p data-i18n="cv.e2.p">Participation à la cession de l'activité de conseil (création de présentations), optimisation des méthodes de calcul des émissions de gaz à effet de serre dans le cadre de la CSRD et gestion des relances clients pour facturation.</p>
+                    </article>
+                    <article class="work cv-entry">
+                        <span class="when" data-i18n="cv.e3.when">Janvier 2024 - février 2024</span>
+                        <h3>WithSecure – Helsinki</h3>
+                        <p class="meta" data-i18n="cv.e3.role">Stage au sein de la direction financière</p>
+                        <p data-i18n="cv.e3.p">Gestion et validation des données clients (Salesforce), analyses financières (OPEX, chiffre d'affaires, prises de commandes), relecture du rapport annuel 2023 et vérifications du site Investor Relations.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-        <h2 class="rv">Formation</h2>
-        <ul class="rows rv" style="isolation:isolate">
-          <li class="row">
-            <span class="yr">2026 → 2027</span>
-            <span class="ttl">Master 2 ECAP, Économétrie Appliquée</span>
-            <span class="org">IAE Nantes <span class="tag-note">en cours</span></span>
-            <span class="plus"></span>
-          </li>
-          <li class="row expand">
-            <span class="yr">2025 → 2026</span>
-            <span class="ttl">Master 1 ECAP, Économétrie Appliquée</span>
-            <span class="org">IAE Nantes · Mention Bien</span>
-            <span class="plus">+</span>
-            <div class="detail">Mémoire : connaissance, perception et acceptation des mesures de gestion du risque côtier, sous la direction de Muriel Travers. <a href="memoire.html">Lire la synthèse</a>.</div>
-          </li>
-          <li class="row">
-            <span class="yr">2024 → 2025</span>
-            <span class="ttl">M1 CAEGR</span>
-            <span class="org">IAE Nantes · Chargé d'affaires entreprise et gestion des risques</span>
-            <span class="plus"></span>
-          </li>
-          <li class="row">
-            <span class="yr">2024</span>
-            <span class="ttl">Licence 3 Économie et Management</span>
-            <span class="org">IAE Nantes · Banque &amp; Finance</span>
-            <span class="plus"></span>
-          </li>
-          <li class="row">
-            <span class="yr">2021</span>
-            <span class="ttl">Baccalauréat, Mention Bien</span>
-            <span class="org">Lycée Jules Rieffel · Maths, Physique-Chimie</span>
-            <span class="plus"></span>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
+        <section class="band alt">
+            <div class="wrap">
+                <div><h2 data-i18n="cv.h.edu">Diplômes</h2></div>
+                <div>
+                    <article class="work cv-entry">
+                        <span class="when">IAE Nantes</span>
+                        <h3 data-i18n="cv.d1.h">Master 2 Économétrie Appliquée</h3>
+                        <p class="meta" data-i18n="cv.d1.meta">2026-2027 (en cours)</p>
+                        <p data-i18n="cv.d1.p"><strong>Cours :</strong> séries temporelles multivariées, régressions pénalisées, arbres de décision, économétrie spatiale.</p>
+                    </article>
+                    <article class="work cv-entry">
+                        <span class="when">IAE Nantes</span>
+                        <h3 data-i18n="cv.d2.h">Master 1 Économétrie Appliquée</h3>
+                        <p class="meta" data-i18n="cv.d2.meta">2025-2026 – Mention Bien</p>
+                        <p data-i18n="cv.d2.p1"><strong>Mémoire :</strong> <a href="memoire.html">acceptation des mesures de gestion du risque côtier au Croisic et à Batz-sur-Mer</a> (enquête, 147 ménages, logit ordonné).</p>
+                        <p data-i18n="cv.d2.p2"><strong>Cours :</strong> économétrie linéaire et qualitative, séries temporelles, prévision et conjoncture, R avancé &amp; Git, Python, SQL, Shiny.</p>
+                    </article>
+                    <article class="work cv-entry">
+                        <span class="when">IAE Nantes</span>
+                        <h3 data-i18n="cv.d3.h">M1 CAEGR (Chargé d'Affaires Entreprise et Gestion des Risques)</h3>
+                        <p class="meta">2024-2025</p>
+                    </article>
+                    <article class="work cv-entry">
+                        <span class="when">IAE Nantes</span>
+                        <h3 data-i18n="cv.d4.h">Licence 3 Économie et Management (Banque &amp; Finance)</h3>
+                        <p class="meta">2024</p>
+                    </article>
+                    <article class="work cv-entry">
+                        <span class="when">Lycée Jules-Rieffel</span>
+                        <h3 data-i18n="cv.d5.h">Baccalauréat, mention Bien</h3>
+                        <p class="meta" data-i18n="cv.d5.meta">2021 (Mathématiques &amp; Physique-Chimie)</p>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-  <section class="sec contact" id="contact">
-    <div class="wrap">
-      <div class="sec-head rv"><span class="no">Contact</span><h2>Un stage à proposer ? <em>Écrivez-moi.</em></h2></div>
-      <a class="mail rv" href="mailto:samuel.lenenes@gmail.com">samuel.lenenes<wbr>@gmail.com</a>
-    </div>
-  </section>
+        <section class="band">
+            <div class="wrap">
+                <div><h2 data-i18n="cv.h.skills">Compétences</h2></div>
+                <div>
+                    <p class="sub" data-i18n="cv.s.tech">Techniques</p>
+                    <ul class="tags">
+                        <li>R / RStudio</li>
+                        <li>Python</li>
+                        <li>SQL</li>
+                        <li>Power BI</li>
+                        <li>Excel</li>
+                        <li>Stata</li>
+                        <li>Git / GitHub</li>
+                    </ul>
+                    <p class="sub" data-i18n="cv.s.data">Data analyse</p>
+                    <ul class="tags">
+                        <li data-i18n="cv.s.d1">Économétrie</li>
+                        <li data-i18n="cv.s.d2">Prévision</li>
+                        <li data-i18n="cv.s.d3">Visualisation</li>
+                        <li data-i18n="cv.s.d4">Modélisation</li>
+                    </ul>
+                    <p class="sub" data-i18n="cv.h.lang">Langues</p>
+                    <ul class="level-list" data-i18n-num>
+                        <li><span data-i18n="cv.l1">Français</span><span class="lvl">5/5</span></li>
+                        <li><span data-i18n="cv.l2">Anglais</span><span class="lvl">4,5/5</span></li>
+                        <li><span data-i18n="cv.l3">Espagnol</span><span class="lvl">2,5/5</span></li>
+                        <li><span data-i18n="cv.l4">Chinois</span><span class="lvl">1,5/5</span></li>
+                    </ul>
+                    <p class="sub" style="margin-top:1.6rem" data-i18n="cv.h.int">Centres d'intérêt</p>
+                    <ul class="interests" style="font-size:1rem">
+                        <li data-i18n="cv.i1"><strong>Sports :</strong> boxe, surf, fitness</li>
+                        <li data-i18n="cv.i2"><strong>Voyages :</strong> Europe, USA, Afrique du Sud, Seychelles, Dubaï, Indonésie…</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-</main>
+        <section class="band alt" id="contact">
+            <div class="wrap">
+                <div><h2>Contact</h2></div>
+                <ul class="contact-list">
+                    <li><span class="label" data-i18n="index.c.phone">Téléphone</span><span>+33 7 82 46 30 42</span></li>
+                    <li><span class="label" data-i18n="cv.c.address">Adresse</span><span>44800 Saint-Herblain</span></li>
+                    <li><span class="label">Email</span><a href="mailto:samuel.lenenes@gmail.com">samuel.lenenes@gmail.com</a></li>
+                    <li><span class="label">LinkedIn</span><a href="https://www.linkedin.com/in/samuel-le-nenes-3884a3337" target="_blank" rel="noopener">www.linkedin.com/in/samuel-le-nenes-3884a3337</a></li>
+                    <li><span class="label">Portfolio</span><a href="https://samuellenenes-lab.github.io/">samuellenenes-lab.github.io</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
 
-<footer>
-  <div class="wrap">
-    <span>© <span class="year">2026</span> Samuel Le Nenes</span>
-    <span>Hébergé sur GitHub Pages</span>
-  </div>
-</footer>
+    <footer>
+        <div class="wrap">Samuel Le Nenes, 2026</div>
+    </footer>
 
-<script src="assets/js/main.js"></script>
 </body>
 </html>

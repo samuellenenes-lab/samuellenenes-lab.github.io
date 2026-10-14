@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 530" role="img" aria-labelledby="t">
+<title id="t">Overall model diagram: six blocks of determinants, scores X1 to X4 and acceptance variables Y1 to Y7</title>
+<defs>
+<marker id="mA" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#8f7fb3"/></marker>
+<marker id="mB" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#4d7590"/></marker>
+<marker id="mC" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#b98478"/></marker>
+<marker id="mD" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#6f8f7d"/></marker>
+<marker id="mE" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#cf8b68"/></marker>
+<marker id="mF" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#b59a4a"/></marker>
+<marker id="mS" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1f6683"/></marker>
+</defs>
+<rect width="940" height="530" fill="#ffffff"/>
+<g font-family="Lato, 'Segoe UI', Arial, sans-serif">
+<rect x="22" y="22" width="266" height="128" rx="7" fill="#f1e4f5" stroke="#a593c4" stroke-width="1.4"/>
+<text x="155.0" y="47" text-anchor="middle" font-size="12.5" fill="#5e4a85"><tspan font-weight="700">Block A</tspan> · Sociodemographics</text>
+<line x1="36" x2="274" y1="58" y2="58" stroke="#a593c4" stroke-width="0.8"/>
+<circle cx="46" cy="72.5" r="2.6" fill="#1f2933"/>
+<text x="70" y="76" font-size="10.5" fill="#1f2933">Age</text>
+<circle cx="46" cy="87.5" r="2.6" fill="#1f2933"/>
+<text x="70" y="91" font-size="10.5" fill="#1f2933">Sex</text>
+<circle cx="46" cy="102.5" r="2.6" fill="#1f2933"/>
+<text x="70" y="106" font-size="10.5" fill="#1f2933">Education</text>
+<circle cx="46" cy="117.5" r="2.6" fill="#1f2933"/>
+<text x="70" y="121" font-size="10.5" fill="#1f2933">Monthly income</text>
+<rect x="338" y="22" width="264" height="128" rx="7" fill="#dce9f2" stroke="#6f97b8" stroke-width="1.4"/>
+<text x="470.0" y="47" text-anchor="middle" font-size="12.5" fill="#2c5373"><tspan font-weight="700">Block B</tspan> · Residence and property</text>
+<line x1="352" x2="588" y1="58" y2="58" stroke="#6f97b8" stroke-width="0.8"/>
+<circle cx="362" cy="72.5" r="2.6" fill="#1f2933"/>
+<text x="386" y="76" font-size="10.5" fill="#1f2933">Main residence status</text>
+<circle cx="362" cy="87.5" r="2.6" fill="#1f2933"/>
+<text x="386" y="91" font-size="10.5" fill="#1f2933">Owner status</text>
+<circle cx="362" cy="102.5" r="2.6" fill="#1f2933"/>
+<text x="386" y="106" font-size="10.5" fill="#1f2933">Length of residence</text>
+<circle cx="362" cy="117.5" r="2.6" fill="#1f2933"/>
+<text x="386" y="121" font-size="10.5" fill="#1f2933">Distance to the shoreline</text>
+<rect x="652" y="22" width="266" height="128" rx="7" fill="#f4e1db" stroke="#c98d80" stroke-width="1.4"/>
+<text x="785.0" y="47" text-anchor="middle" font-size="12.5" fill="#8a4a3e"><tspan font-weight="700">Block C</tspan> · Attachment to the area</text>
+<line x1="666" x2="904" y1="58" y2="58" stroke="#c98d80" stroke-width="0.8"/>
+<circle cx="676" cy="72.5" r="2.6" fill="#1f2933"/>
+<text x="700" y="76" font-size="10.5" fill="#1f2933">Emotional attachment</text>
+<circle cx="676" cy="87.5" r="2.6" fill="#1f2933"/>
+<text x="700" y="91" font-size="10.5" fill="#1f2933">Property value</text>
+<rect x="652" y="200" width="266" height="128" rx="7" fill="#e1eee4" stroke="#86ad93" stroke-width="1.4"/>
+<text x="785.0" y="225" text-anchor="middle" font-size="12.5" fill="#3f6b4f"><tspan font-weight="700">Block D</tspan> · Institutional trust</text>
+<line x1="666" x2="904" y1="236" y2="236" stroke="#86ad93" stroke-width="0.8"/>
+<circle cx="676" cy="250.5" r="2.6" fill="#1f2933"/>
+<text x="700" y="254" font-size="10.5" fill="#1f2933">Trust in local decision-makers</text>
+<circle cx="676" cy="265.5" r="2.6" fill="#1f2933"/>
+<text x="700" y="269" font-size="10.5" fill="#1f2933">Sense of fairness</text>
+<rect x="22" y="378" width="266" height="128" rx="7" fill="#f6e4d0" stroke="#d79c7a" stroke-width="1.4"/>
+<text x="155.0" y="403" text-anchor="middle" font-size="12.5" fill="#9a5532"><tspan font-weight="700">Block E</tspan> · Social influence</text>
+<line x1="36" x2="274" y1="414" y2="414" stroke="#d79c7a" stroke-width="0.8"/>
+<circle cx="46" cy="428.5" r="2.6" fill="#1f2933"/>
+<text x="70" y="432" font-size="10.5" fill="#1f2933">Talking about the risk (family, friends)</text>
+<circle cx="46" cy="443.5" r="2.6" fill="#1f2933"/>
+<text x="70" y="447" font-size="10.5" fill="#1f2933">Perceived majority view</text>
+<rect x="338" y="378" width="264" height="128" rx="7" fill="#f5eed1" stroke="#c9ad5c" stroke-width="1.4"/>
+<text x="470.0" y="403" text-anchor="middle" font-size="12.5" fill="#8a6d1e"><tspan font-weight="700">Block F</tspan> · Experience of the risk</text>
+<line x1="352" x2="588" y1="414" y2="414" stroke="#c9ad5c" stroke-width="0.8"/>
+<circle cx="362" cy="428.5" r="2.6" fill="#1f2933"/>
+<text x="386" y="432" font-size="10.5" fill="#1f2933">Direct experience (lifetime)</text>
+<circle cx="362" cy="443.5" r="2.6" fill="#1f2933"/>
+<text x="386" y="447" font-size="10.5" fill="#1f2933">Direct experience (last 10 years)</text>
+<circle cx="362" cy="458.5" r="2.6" fill="#1f2933"/>
+<text x="386" y="462" font-size="10.5" fill="#1f2933">Indirect experience</text>
+<circle cx="362" cy="473.5" r="2.6" fill="#1f2933"/>
+<text x="386" y="477" font-size="10.5" fill="#1f2933">→ Overall experience (summary)</text>
+<rect x="22" y="200" width="266" height="128" rx="7" fill="#1f7193" stroke="#155a76" stroke-width="2"/>
+<text x="155.0" y="225" text-anchor="middle" font-size="12" fill="#ffffff"><tspan font-weight="700">MAIN SCORES</tspan> <tspan font-style="italic" fill="#c9d8e6">(X1 – X4)</tspan></text>
+<line x1="36" x2="274" y1="236" y2="236" stroke="#ffffff" stroke-opacity="0.45" stroke-width="0.8"/>
+<circle cx="46" cy="250.5" r="2.6" fill="#ffffff"/>
+<text x="66" y="254" font-size="10.5" fill="#ffffff">X1  Objective knowledge</text>
+<circle cx="46" cy="265.5" r="2.6" fill="#ffffff"/>
+<text x="66" y="269" font-size="10.5" fill="#ffffff">X2  Subjective knowledge</text>
+<circle cx="46" cy="280.5" r="2.6" fill="#ffffff"/>
+<text x="66" y="284" font-size="10.5" fill="#ffffff">X3  Perceived danger</text>
+<circle cx="46" cy="295.5" r="2.6" fill="#ffffff"/>
+<text x="66" y="299" font-size="10.5" fill="#ffffff">X4  Perceived capacity to act</text>
+<rect x="338" y="200" width="264" height="128" rx="7" fill="#11305a" stroke="#0a1f3d" stroke-width="2"/>
+<text x="470.0" y="225" text-anchor="middle" font-size="12" fill="#ffffff"><tspan font-weight="700">ACCEPTANCE VARIABLES Y</tspan> <tspan font-style="italic" fill="#c9d8e6">(Y1 – Y7)</tspan></text>
+<line x1="352" x2="588" y1="236" y2="236" stroke="#ffffff" stroke-opacity="0.45" stroke-width="0.8"/>
+<text x="358" y="254.0" font-size="10" fill="#ffffff">Y1  Prevention / preparedness</text>
+<text x="358" y="265.6" font-size="10" fill="#ffffff">Y2  Adapting the home</text>
+<text x="358" y="277.2" font-size="10" fill="#ffffff">Y3  Insurance-based solutions</text>
+<text x="358" y="288.8" font-size="10" fill="#ffffff">Y4  Public information</text>
+<text x="358" y="300.4" font-size="10" fill="#ffffff">Y5  Protective structures</text>
+<text x="358" y="312.0" font-size="10" fill="#ffffff">Y6  Nature-based solutions</text>
+<text x="358" y="323.6" font-size="10" fill="#ffffff">Y7  Development restrictions</text>
+<line x1="292" y1="132" x2="332" y2="216" stroke="#8f7fb3" stroke-width="2" marker-end="url(#mA)"/>
+<line x1="470" y1="154" x2="470" y2="192" stroke="#4d7590" stroke-width="2" marker-end="url(#mB)"/>
+<line x1="648" y1="132" x2="608" y2="216" stroke="#b98478" stroke-width="2" marker-end="url(#mC)"/>
+<line x1="646" y1="264" x2="610" y2="264" stroke="#6f8f7d" stroke-width="2" marker-end="url(#mD)"/>
+<line x1="292" y1="394" x2="332" y2="312" stroke="#cf8b68" stroke-width="2" marker-end="url(#mE)"/>
+<line x1="470" y1="372" x2="470" y2="336" stroke="#b59a4a" stroke-width="2" marker-end="url(#mF)"/>
+<line x1="294" y1="264" x2="330" y2="264" stroke="#1f6683" stroke-width="3" marker-end="url(#mS)"/>
+</g></svg>

@@ -1,251 +1,260 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Mémoire M1 · Samuel Le Nenes</title>
-  <meta name="description" content="Synthèse du mémoire de M1 ECAP : acceptation des mesures de gestion du risque côtier, logit ordonné sur 147 ménages.">
-  <meta property="og:title" content="Samuel Le Nenes · Économétrie appliquée">
-  <meta property="og:description" content="M2 ECAP à l'IAE Nantes. Recherche un stage de fin d'études en data / économétrie.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://samuellenenes-lab.github.io/assets/img/og-card.png">
-  <meta name="theme-color" content="#f6f3ec">
-  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
-  <link rel="preload" href="assets/fonts/instrument-serif-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="mem.title">Mémoire M1 | Samuel Le Nenes</title>
+    <meta name="description" content="Synthèse du mémoire de M1 ECAP : acceptation des mesures de gestion du risque côtier, logit ordonné sur 147 ménages du Croisic et de Batz-sur-Mer." data-i18n-attr="content:mem.desc">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/main.js" defer></script>
 </head>
 <body>
 
-<header class="top">
-  <div class="wrap">
-    <a class="logo" href="index.html" aria-label="Accueil">S.L.N</a>
-    <ul class="menu">
-      <li><a href="index.html#profil">Profil</a></li>
-      <li><a href="memoire.html" aria-current="page">Mémoire</a></li>
-      <li><a href="cv.html">CV</a></li>
-      <li><a href="index.html#contact">Contact</a></li>
-    </ul>
-  </div>
-</header>
-
-<main>
-  <section class="page-head">
-    <canvas class="waves" data-dense="1" aria-hidden="true"></canvas>
-    <div class="wrap">
-      <p class="kick">Mémoire de Master 1 ECAP · IAE Nantes · Juin 2026</p>
-      <h1><span class="split-line"><span>Savoir, percevoir,</span></span><span class="split-line"><span><em>accepter.</em></span></span></h1>
-      <p class="sub">Connaissance, perception et acceptation des mesures de gestion du risque côtier. Enquête auprès de 147 ménages du Croisic et de Batz-sur-Mer (Loire-Atlantique), sous la direction de Muriel Travers (LEMNA, Nantes Université).</p>
-      <div class="ctas">
-        <a class="cta" href="assets/docs/Note_synthese_M1_ECAP_Le_Nenes.pdf" download>Note de synthèse, PDF 4 p. <span class="ar">↓</span></a>
-        <a class="cta" href="#resultats">Aller aux résultats <span class="ar">→</span></a>
-      </div>
-    </div>
-  </section>
-
-  <!-- 01 Question -->
-  <section class="sec">
-    <div class="wrap">
-      <div class="sec-head rv"><span class="no">(01) La question</span><h2>Mieux informer suffit-il <em>à faire accepter ?</em></h2></div>
-      <div class="prose">
-        <div></div>
-        <div>
-          <p class="pull rv">« Dans quelle mesure le niveau de connaissance et de perception du risque côtier influence-t-il la mise en place de <em>mesures de protection et d'adaptation</em> ? »</p>
-          <div class="body">
-            <div class="rv">
-              <p>Xynthia en 2010 (47 décès, environ 2,5 milliards d'euros de dommages), puis Ciarán en 2023 : la submersion et l'érosion sont devenues un risque durable pour le littoral atlantique, alors que près de 12 % de la population française vit sur les côtes.</p>
-              <p>Le terrain : la presqu'île guérandaise, dont une large part est classée en zone rouge du plan de prévention des risques littoraux (PPRL).</p>
+    <a class="skip" href="#contenu" data-i18n="a11y.skip">Aller au contenu</a>
+    <nav class="navbar" aria-label="Navigation principale" data-i18n-attr="aria-label:a11y.nav">
+        <div class="wrap">
+            <a href="index.html" class="brand">Samuel Le Nenes</a>
+            <ul class="nav-links">
+                <li class="nav-home"><a href="index.html" data-i18n="nav.home">Accueil</a></li>
+                <li><a href="cv.html" data-i18n="nav.cv">CV</a></li>
+                <li><a href="index.html#experiences" data-i18n="nav.exp">Expériences</a></li>
+                <li><a href="index.html#travaux" class="active" data-i18n="nav.work">Travaux</a></li>
+                <li><a href="index.html#recommandations" data-i18n="nav.reco">Recommandations</a></li>
+                <li><a href="index.html#competences" data-i18n="nav.skills">Compétences</a></li>
+                <li><a href="index.html#contact" data-i18n="nav.contact">Contact</a></li>
+            </ul>
+            <div class="lang">
+                <button type="button" class="lang-btn" id="lang-btn" aria-haspopup="true" aria-expanded="false" aria-controls="lang-menu" aria-label="Langue : français. Changer de langue" data-i18n-attr="aria-label:lang.button">
+                    <svg class="flag" data-flag="fr" viewBox="0 0 3 2" aria-hidden="true" focusable="false"><rect width="1" height="2" fill="#002654"/><rect x="1" width="1" height="2" fill="#ffffff"/><rect x="2" width="1" height="2" fill="#ce1126"/></svg>
+                    <svg class="flag" data-flag="en" hidden viewBox="0 0 60 30" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><clipPath id="uk-a"><path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z"/></clipPath><rect width="60" height="30" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#ffffff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#uk-a)" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#ffffff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></svg>
+                    <span class="code" data-lang-code>FR</span>
+                    <svg class="caret" viewBox="0 0 10 10" aria-hidden="true" focusable="false"><path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+                </button>
+                <ul class="lang-menu" id="lang-menu" role="menu" aria-labelledby="lang-btn" hidden>
+                    <li role="none"><button type="button" role="menuitemradio" aria-checked="true" data-set-lang="fr" lang="fr"><svg class="flag" viewBox="0 0 3 2" aria-hidden="true" focusable="false"><rect width="1" height="2" fill="#002654"/><rect x="1" width="1" height="2" fill="#ffffff"/><rect x="2" width="1" height="2" fill="#ce1126"/></svg><span class="code">FR</span>Français</button></li>
+                    <li role="none"><button type="button" role="menuitemradio" aria-checked="false" data-set-lang="en" lang="en"><svg class="flag" viewBox="0 0 60 30" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><clipPath id="uk-b"><path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z"/></clipPath><rect width="60" height="30" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#ffffff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#uk-b)" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#ffffff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></svg><span class="code">EN</span>English</button></li>
+                </ul>
             </div>
-            <div class="rv">
-              <p>À partir d'une enquête en ligne, j'ai construit quatre scores sur 100 : connaissance objective (X1), connaissance subjective des dispositifs publics (X2), perception du danger (X3) et capacité d'agir perçue (X4, d'après le modèle PADM de Lindell et Perry).</p>
-              <p>Ces scores sont confrontés à l'acceptation de sept mesures, notée sur une échelle d'accord à cinq modalités.</p>
+        </div>
+    </nav>
+
+    <main id="contenu">
+        <section class="wrap page-head">
+            <p><span class="badge" data-i18n="mem.kicker">Mémoire de Master 1 ECAP · IAE Nantes · Juin 2026</span></p>
+            <h1 data-i18n="mem.h1">Savoir, percevoir, accepter.</h1>
+            <p data-i18n="mem.sub">Connaissance, perception et acceptation des mesures de gestion du risque côtier. Enquête auprès de 147 ménages du Croisic et de Batz-sur-Mer (Loire-Atlantique), sous la direction de Muriel Travers (LEMNA, Nantes Université).</p>
+            <p class="links">
+                <a class="cta solid" href="assets/docs/Memoire_M1_ECAP_Le_Nenes.pdf" target="_blank" rel="noopener" data-i18n="mem.cta.thesis">Mémoire complet (PDF, 5,4 Mo)</a>
+                <a class="cta" href="assets/docs/Note_synthese_M1_ECAP_Le_Nenes.pdf" data-href-en="assets/docs/Note_synthese_M1_ECAP_Le_Nenes_EN.pdf" target="_blank" rel="noopener" data-i18n="mem.cta.note">Note de synthèse (PDF, 4 p.)</a>
+                <a class="cta" href="resultats.html" data-i18n="mem.cta.results">Résultats interactifs</a>
+            </p>
+        </section>
+
+        <!-- 01 Question -->
+        <section class="band alt">
+            <div class="wrap">
+                <div>
+                    <h2 data-i18n="mem.s1.h">Mieux informer suffit-il à faire accepter ?</h2>
+                    <p class="lead" data-i18n="mem.s1.lead">01 · La question</p>
+                </div>
+                <div class="body">
+                    <p class="pull" data-i18n="mem.s1.pull">« Dans quelle mesure le niveau de connaissance et de perception du risque côtier influence-t-il la mise en place de mesures de protection et d'adaptation ? »</p>
+                    <p data-i18n="mem.s1.p1">Xynthia en 2010 (47 décès, environ 2,5 milliards d'euros de dommages), puis Ciarán en 2023 : la submersion et l'érosion sont devenues un risque durable pour le littoral atlantique, alors que près de 12 % de la population française vit sur les côtes.</p>
+                    <p data-i18n="mem.s1.p2">Le terrain : la presqu'île guérandaise, dont une large part est classée en zone rouge du plan de prévention des risques littoraux (PPRL).</p>
+                    <p data-i18n="mem.s1.p3">À partir d'une enquête en ligne, j'ai construit quatre scores sur 100 : connaissance objective (X1), connaissance subjective des dispositifs publics (X2), perception du danger (X3) et capacité d'agir perçue (X4, d'après le modèle PADM de Lindell et Perry).</p>
+                    <p data-i18n="mem.s1.p4">Ces scores sont confrontés à l'acceptation de sept mesures, notée sur une échelle d'accord à cinq modalités.</p>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+        </section>
 
-  <!-- 02 Données -->
-  <section class="sec" style="padding-top:0">
-    <div class="wrap">
-      <div class="sec-head rv"><span class="no">(02) Les données</span><h2>147 ménages, <em>deux écarts frappants.</em></h2></div>
-      <div class="grid-2">
-        <div class="light-panel rv">
-          <span class="lbl">Scores moyens · sur 100</span>
-          <h4>Les ménages en savent <em>plus qu'ils ne le pensent</em></h4>
-          <div class="hbar" data-v="74.4" data-tip="<b>X1 · Connaissance objective</b><br>savoir vérifiable : 74,4 / 100"><div class="k"><b>X1</b>Connaissance objective</div><div class="v"><div class="fill hot"></div><span class="num">74,4</span></div></div>
-          <div class="hbar" data-v="64.5" data-tip="<b>X3 · Perception du danger</b><br>64,5 / 100"><div class="k"><b>X3</b>Perception du danger</div><div class="v"><div class="fill"></div><span class="num">64,5</span></div></div>
-          <div class="hbar" data-v="59.4" data-tip="<b>X4 · Capacité d'agir perçue</b><br>59,4 / 100"><div class="k"><b>X4</b>Capacité d'agir perçue</div><div class="v"><div class="fill"></div><span class="num">59,4</span></div></div>
-          <div class="hbar" data-v="38.4" data-tip="<b>X2 · Connaissance subjective</b><br>familiarité avec le PPRL, CatNat, le Fonds Barnier : 38,4 / 100"><div class="k"><b>X2</b>Connaissance subjective</div><div class="v"><div class="fill hot"></div><span class="num">38,4</span></div></div>
-          <p class="model-note">36 points d'écart entre X1 et X2 : les ménages se sentent surtout mal informés sur les dispositifs publics.</p>
-        </div>
-        <div class="light-panel rv">
-          <span class="lbl">Part de ménages favorables</span>
-          <h4>Trois mesures assez dispersées <em>pour être modélisées</em></h4>
-          <div class="hbar" data-v="77" data-tip="<b>Y5 · Ouvrages de protection</b><br>77 % de favorables"><div class="k"><b>Y5</b>Ouvrages de protection</div><div class="v"><div class="fill"></div><span class="num">77 %</span></div></div>
-          <div class="hbar" data-v="68" data-tip="<b>Y2 · Adaptation du logement</b><br>68 % de favorables"><div class="k"><b>Y2</b>Adaptation du logement</div><div class="v"><div class="fill"></div><span class="num">68 %</span></div></div>
-          <div class="hbar" data-v="38.8" data-tip="<b>Y3 · Solutions assurantielles</b><br>38,8 % de favorables<br>38,1 % de défavorables"><div class="k"><b>Y3</b>Solutions assurantielles</div><div class="v"><div class="fill hot"></div><span class="num">38,8 %</span></div></div>
-          <p class="model-note">Y3 est la seule mesure clivante : 38,8 % de favorables contre 38,1 % de défavorables.</p>
-        </div>
-      </div>
-      <p class="rv" style="margin-top:24px;font-size:15px;color:var(--muted);max-width:80ch">Profil des répondants : 76 % de résidents principaux, 69 % de propriétaires, 42 % à moins de 500 m du trait de côte. Les femmes (75 %) et les plus de 40 ans (82 %) sont surreprésentés.</p>
-    </div>
-  </section>
-
-  <!-- 03 Méthode -->
-  <section class="sec" style="padding-top:0">
-    <div class="wrap">
-      <div class="sec-head rv"><span class="no">(03) La méthode</span><h2>Logit <em>ordonné.</em></h2></div>
-      <div class="prose">
-        <div></div>
-        <div class="body">
-          <div class="rv">
-            <p>Les réponses sont ordonnées, mais l'écart entre deux modalités n'a pas de valeur fixe : une régression linéaire ne convient pas. Le logit ordonné estime la probabilité qu'un ménage se classe dans une catégorie plus favorable, en respectant cet ordre.</p>
-            <p>Les résultats se lisent en odds ratios : au-dessus de 1, la variable augmente les chances d'être plus favorable ; en dessous, elle les réduit. L'hypothèse d'égalité des pentes est vérifiée par le test de Brant.</p>
-            <div class="eqn">
-              Y*<sub>i</sub> = X<sub>i</sub>β + ε<sub>i</sub><br>
-              α<sub>1</sub> &lt; α<sub>2</sub> &lt; … &lt; α<sub>k−1</sub><br>
-              P(Y<sub>i</sub> ≤ j | X<sub>i</sub>) = F(α<sub>j</sub> − X<sub>i</sub>β)
+        <!-- 02 Données -->
+        <section class="band">
+            <div class="wrap">
+                <div>
+                    <h2 data-i18n="mem.s2.h">147 ménages, deux écarts frappants.</h2>
+                    <p class="lead" data-i18n="mem.s2.lead">02 · Les données</p>
+                </div>
+                <div>
+                    <div class="grid-2" data-i18n-num>
+                        <div class="light-panel">
+                            <span class="lbl" data-i18n="mem.s2.p1.lbl">Scores moyens · sur 100</span>
+                            <h4 data-i18n="mem.s2.p1.h">Les ménages en savent plus qu'ils ne le pensent</h4>
+                            <div class="hbar"><div class="k"><b>X1</b><span data-i18n="mem.x1">Connaissance objective</span></div><div class="v"><div class="track"><div class="fill hot" style="width:74.4%"></div></div><span class="num">74,4</span></div></div>
+                            <div class="hbar"><div class="k"><b>X3</b><span data-i18n="mem.x3">Perception du danger</span></div><div class="v"><div class="track"><div class="fill" style="width:64.5%"></div></div><span class="num">64,5</span></div></div>
+                            <div class="hbar"><div class="k"><b>X4</b><span data-i18n="mem.x4">Capacité d'agir perçue</span></div><div class="v"><div class="track"><div class="fill" style="width:59.4%"></div></div><span class="num">59,4</span></div></div>
+                            <div class="hbar"><div class="k"><b>X2</b><span data-i18n="mem.x2">Connaissance subjective</span></div><div class="v"><div class="track"><div class="fill hot" style="width:38.4%"></div></div><span class="num">38,4</span></div></div>
+                            <p class="model-note" data-i18n="mem.s2.p1.note">36 points d'écart entre X1 et X2 : les ménages se sentent surtout mal informés sur les dispositifs publics (PPRL, régime CatNat, Fonds Barnier).</p>
+                        </div>
+                        <div class="light-panel">
+                            <span class="lbl" data-i18n="mem.s2.p2.lbl">Part de ménages favorables</span>
+                            <h4 data-i18n="mem.s2.p2.h">Trois mesures assez dispersées pour être modélisées</h4>
+                            <div class="hbar"><div class="k"><b>Y5</b><span data-i18n="mem.y5">Ouvrages de protection</span></div><div class="v"><div class="track"><div class="fill" style="width:76.9%"></div></div><span class="num">77 %</span></div></div>
+                            <div class="hbar"><div class="k"><b>Y2</b><span data-i18n="mem.y2">Adaptation du logement</span></div><div class="v"><div class="track"><div class="fill" style="width:68%"></div></div><span class="num">68 %</span></div></div>
+                            <div class="hbar"><div class="k"><b>Y3</b><span data-i18n="mem.y3">Solutions assurantielles</span></div><div class="v"><div class="track"><div class="fill hot" style="width:38.8%"></div></div><span class="num">38,8 %</span></div></div>
+                            <p class="model-note" data-i18n="mem.s2.p2.note">Y3 est la seule mesure clivante : 38,8 % de favorables contre 38,1 % de défavorables.</p>
+                        </div>
+                    </div>
+                    <p class="small" style="margin:1.4rem 0 0" data-i18n="mem.s2.profile">Profil des répondants : 76 % de résidents principaux, 69 % de propriétaires, 42 % à moins de 500 m du trait de côte. Les femmes (75 %) et les plus de 40 ans (82 %) sont surreprésentés.</p>
+                </div>
             </div>
-            <p style="font-size:14px;color:var(--muted)">F : fonction de répartition logistique, estimation par maximum de vraisemblance. Pour Y5, le modèle retenu exclut la connaissance objective et la norme majoritaire après rejet du test de Brant.</p>
-          </div>
-          <div class="rv">
-            <div class="fig"><img src="assets/img/schema-modele.jpg" alt="Schéma reliant six blocs de déterminants aux sept variables d'acceptation via les quatre scores X1 à X4"></div>
-            <p class="figcap">Fig. 1 · Six blocs de déterminants reliés aux sept variables d'acceptation (Y1 à Y7) via les scores X1 à X4.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+        </section>
 
-  <!-- 04 Résultats -->
-  <section class="sec dark" id="resultats">
-    <div class="wrap">
-      <div class="sec-head rv"><span class="no">(04) Résultats</span><h2>Trois modèles, <em>trois logiques.</em></h2></div>
-      <div class="feature">
-        <div class="rv">
-          <h3>Choisissez un modèle</h3>
-          <p>Chaque point est l'odds ratio d'une variable explicative. Plein : effet significatif au seuil de 10 %. Vide : non significatif. Survolez un point pour le détail.</p>
-          <p>Les trois modèles sont globalement significatifs (test du rapport de vraisemblance : p = 0,004 pour Y2, p &lt; 0,001 pour Y3, p = 0,048 pour Y5).</p>
-          <div class="nums">
-            <div><div class="n">0,113</div><div class="t">pseudo-R² · Y2</div></div>
-            <div><div class="n">0,151</div><div class="t">pseudo-R² · Y3</div></div>
-            <div><div class="n">0,083</div><div class="t">pseudo-R² · Y5</div></div>
-          </div>
-        </div>
-        <div class="panel rv" data-or-chart="dark" data-start="Y3">
-          <div class="panel-head">
-            <span class="lbl">Odds ratios · échelle log</span>
-            <div class="tabs" role="tablist">
-              <button type="button" role="tab" data-m="Y2">Y2 logement</button>
-              <button type="button" role="tab" data-m="Y3">Y3 assurance</button>
-              <button type="button" role="tab" data-m="Y5">Y5 ouvrages</button>
+        <!-- 03 Méthode -->
+        <section class="band alt">
+            <div class="wrap">
+                <div>
+                    <h2 data-i18n="mem.s3.h">Logit ordonné.</h2>
+                    <p class="lead" data-i18n="mem.s3.lead">03 · La méthode</p>
+                </div>
+                <div class="body">
+                    <p data-i18n="mem.s3.p1">Les réponses sont ordonnées, mais l'écart entre deux modalités n'a pas de valeur fixe : une régression linéaire ne convient pas. Le logit ordonné estime la probabilité qu'un ménage se classe dans une catégorie plus favorable, en respectant cet ordre.</p>
+                    <p data-i18n="mem.s3.p2">Les résultats se lisent en odds ratios : au-dessus de 1, la variable augmente les chances d'être plus favorable ; en dessous, elle les réduit. L'hypothèse d'égalité des pentes est vérifiée par le test de Brant.</p>
+                    <div class="eqn" role="math" aria-label="Y étoile i égale X i bêta plus epsilon i ; alpha 1 inférieur à alpha 2 inférieur à … alpha k moins 1 ; P de Y i inférieur ou égal à j sachant X i égale F de alpha j moins X i bêta" data-i18n-attr="aria-label:mem.eqn.aria">
+                        Y*<sub>i</sub> = X<sub>i</sub>β + ε<sub>i</sub><br>
+                        α<sub>1</sub> &lt; α<sub>2</sub> &lt; … &lt; α<sub>k−1</sub><br>
+                        P(Y<sub>i</sub> ≤ j | X<sub>i</sub>) = F(α<sub>j</sub> − X<sub>i</sub>β)
+                    </div>
+                    <p class="small muted" data-i18n="mem.s3.p3">F : fonction de répartition logistique, estimation par maximum de vraisemblance. Pour Y5, le modèle retenu exclut la connaissance objective et la norme majoritaire après rejet du test de Brant.</p>
+                    <figure class="fig">
+                        <img src="assets/img/schema-modele-fr.svg" data-src-en="assets/img/schema-modele-en.svg" width="940" height="530" alt="Schéma du modèle : six blocs de déterminants (socio-démographique, résidentiel et patrimonial, attachement au territoire, confiance institutionnelle, influence sociale, expérience du risque) et les quatre scores X1 à X4 pointent vers les sept variables d'acceptation Y1 à Y7." data-i18n-attr="alt:mem.fig.alt">
+                        <figcaption class="figcap" data-i18n="mem.fig.cap">Fig. 1 · Six blocs de déterminants et les scores X1 à X4, reliés aux sept variables d'acceptation (Y1 à Y7).</figcaption>
+                    </figure>
+                </div>
             </div>
-          </div>
-          <div class="chart" style="margin-top:14px"></div>
-          <p class="model-note" style="color:var(--on-dark-2)"></p>
-          <div class="legend">
-            <span><i style="background:#f6f3ec"></i>▲ effet positif</span>
-            <span><i style="background:#a3a09a"></i>▼ effet négatif</span>
-            <span><i style="border:1.5px solid #8c8a84"></i>non significatif</span>
-            <span>* p &lt; 0,10 · ** p &lt; 0,05 · *** p &lt; 0,01</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+        </section>
 
-  <!-- 05 Lecture -->
-  <section class="sec">
-    <div class="wrap">
-      <div class="sec-head rv"><span class="no">(05) Lecture</span><h2>Ce qu'il faut <em>retenir.</em></h2></div>
-      <div class="three rv">
-        <div>
-          <div class="code">Y3</div>
-          <h3>Assurance : la connaissance joue</h3>
-          <p>Dix points de plus sur le score de connaissance subjective multiplient par 1,57 environ les chances d'être plus favorable. Perception du danger et revenu vont dans le même sens. Levier : communiquer sur CatNat, le Fonds Barnier et les conditions d'éligibilité.</p>
-        </div>
-        <div>
-          <div class="code">Y2</div>
-          <h3>Logement : le contexte prime</h3>
-          <p>Aucun score cognitif n'est significatif. Résidence principale (OR = 2,64), confiance dans les décideurs locaux (1,86) et norme sociale (2,09) portent l'explication. Levier : dispositifs participatifs et aides financières lisibles.</p>
-        </div>
-        <div>
-          <div class="code">Y5</div>
-          <h3>Ouvrages : la logique s'inverse</h3>
-          <p>Les ménages les mieux informés sont plus critiques (OR = 0,97 par point de X2). Plus on habite près de la mer, plus on accepte les ouvrages. Levier : parler clairement de leurs limites, coût d'entretien compris.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 06 Tableau -->
-  <section class="sec" style="padding-top:0">
-    <div class="wrap">
-      <div class="sec-head rv"><span class="no">(06) Tableau 1</span><h2>Les odds ratios <em>en détail.</em></h2></div>
-      <div class="table-wrap rv">
-        <table>
-          <thead>
-            <tr><th>Variable explicative</th><th class="n">Y2 · logement</th><th class="n">Y3 · assurance</th><th class="n">Y5 · ouvrages</th></tr>
-          </thead>
-          <tbody>
-            <tr class="grp"><td colspan="4">Dimensions cognitives</td></tr>
-            <tr><td>Connaissance objective (X1)</td><td class="n">1,01</td><td class="n">1,02</td><td class="n">exclu</td></tr>
-            <tr><td>Connaissance subjective (X2)</td><td class="n">0,99</td><td class="n up">1,05***</td><td class="n down">0,97**</td></tr>
-            <tr><td>Perception du danger (X3)</td><td class="n">1,03</td><td class="n up">1,04**</td><td class="n">1,02</td></tr>
-            <tr><td>Capacité d'agir perçue (X4)</td><td class="n">1,03</td><td class="n down">0,97*</td><td class="n">0,99</td></tr>
-            <tr class="grp"><td colspan="4">Situation résidentielle et économique</td></tr>
-            <tr><td>Résidence principale</td><td class="n up">2,64**</td><td class="n down">0,32**</td><td class="n up">2,44*</td></tr>
-            <tr><td>Propriétaire</td><td class="n down">0,46*</td><td class="n">1,22</td><td class="n">1,98</td></tr>
-            <tr><td>Revenu du ménage</td><td class="n">1,15</td><td class="n up">1,44**</td><td class="n">0,86</td></tr>
-            <tr><td>Distance à la mer</td><td class="n">0,83</td><td class="n">0,93</td><td class="n down">0,74**</td></tr>
-            <tr class="grp"><td colspan="4">Confiance, normes et expérience</td></tr>
-            <tr><td>Confiance dans les décideurs</td><td class="n up">1,86**</td><td class="n">1,38</td><td class="n">1,40</td></tr>
-            <tr><td>Norme majoritaire perçue</td><td class="n up">2,09*</td><td class="n">0,84</td><td class="n">exclu</td></tr>
-            <tr><td>Expérience passée du risque</td><td class="n">0,92</td><td class="n">0,90</td><td class="n">1,12</td></tr>
-            <tr class="grp"><td colspan="4">Qualité des modèles</td></tr>
-            <tr><td>Pseudo-R² (McFadden)</td><td class="n">0,113</td><td class="n">0,151</td><td class="n">0,083</td></tr>
-            <tr><td>Test du rapport de vraisemblance</td><td class="n">p = 0,004</td><td class="n">p &lt; 0,001</td><td class="n">p = 0,048</td></tr>
-          </tbody>
-        </table>
-      </div>
-      <p class="figcap">▲ effet positif significatif · ▼ effet négatif significatif · * p &lt; 0,10 · ** p &lt; 0,05 · *** p &lt; 0,01 · estimations sous R</p>
-    </div>
-  </section>
-
-  <!-- 07 Limites -->
-  <section class="sec" style="padding-top:0">
-    <div class="wrap">
-      <div class="sec-head rv"><span class="no">(07) Limites</span><h2>Ce que l'étude <em>ne dit pas.</em></h2></div>
-      <div class="prose">
-        <div></div>
-        <div class="body">
-          <div class="rv">
-            <p>L'échantillon est modeste et probablement composé de ménages déjà sensibilisés au risque. Les modèles établissent des associations, pas des relations causales.</p>
-            <p>Une enquête répétée dans le temps, avec un volet qualitatif, permettrait de consolider les conclusions. Les résultats invitent aussi à intégrer explicitement la confiance institutionnelle, la norme sociale et le statut résidentiel au cadre PADM.</p>
-          </div>
-          <div class="doc rv">
-            <a href="assets/docs/Note_synthese_M1_ECAP_Le_Nenes.pdf" target="_blank" rel="noopener"><img src="assets/img/note-p1-1.png" alt="Première page de la note de synthèse"></a>
-            <div>
-              <h3>La note complète</h3>
-              <p style="font-size:15px">4 pages, avec les recommandations détaillées pour les décideurs publics.</p>
-              <a class="cta solid" href="assets/docs/Note_synthese_M1_ECAP_Le_Nenes.pdf" download>Télécharger <span class="ar">↓</span></a>
+        <!-- 04 Résultats -->
+        <section class="band" id="resultats">
+            <div class="wrap">
+                <div>
+                    <h2 data-i18n="mem.s4.h">Trois modèles, trois logiques.</h2>
+                    <p class="lead" data-i18n="mem.s4.lead">04 · Résultats</p>
+                </div>
+                <div>
+                    <p data-i18n="mem.s4.p1">Chaque point est l'odds ratio d'une variable explicative, avec son intervalle de confiance à 95 %. Triangle plein : effet significatif au seuil de 10 %. Rond vide : non significatif. Survolez une ligne, ou atteignez-la au clavier, pour le détail.</p>
+                    <p data-i18n="mem.s4.p2" data-i18n-num>Les trois modèles sont globalement significatifs (test du rapport de vraisemblance : p = 0,004 pour Y2, p &lt; 0,001 pour Y3, p = 0,048 pour Y5).</p>
+                    <div class="kpis" style="grid-template-columns:repeat(3,1fr)" data-i18n-num>
+                        <div class="kpi"><div class="val">0,113</div><div class="lab">Pseudo-R² · Y2</div></div>
+                        <div class="kpi"><div class="val">0,151</div><div class="lab">Pseudo-R² · Y3</div></div>
+                        <div class="kpi"><div class="val">0,083</div><div class="lab">Pseudo-R² · Y5</div></div>
+                    </div>
+                    <div class="card" data-or-chart data-start="Y3" data-vars="SCORE_CO_100,SCORE_CS_100,SCORE_PD_100,SCORE_CA_100,RESID_PRINC,PROPRIETAIRE,REVENU_NUM,DIST_NUM,CONF_DECID,NORM_MAJORIT_REC,EXP_GLOBAL">
+                        <h3 data-i18n="mem.or.h">Odds ratios et intervalles de confiance à 95 % · échelle logarithmique</h3>
+                        <div class="tabs" role="tablist" aria-label="Choix du modèle" data-i18n-attr="aria-label:mem.or.tabs">
+                            <button type="button" role="tab" id="tab-Y2" data-m="Y2" aria-selected="false" data-i18n="mem.tab.y2">Y2 · logement</button>
+                            <button type="button" role="tab" id="tab-Y3" data-m="Y3" aria-selected="true" data-i18n="mem.tab.y3">Y3 · assurance</button>
+                            <button type="button" role="tab" id="tab-Y5" data-m="Y5" aria-selected="false" data-i18n="mem.tab.y5">Y5 · ouvrages</button>
+                        </div>
+                        <div class="chart" role="tabpanel" aria-labelledby="tab-Y3"></div>
+                        <p class="model-note chart-note"></p>
+                        <ul class="legend">
+                            <li><i style="background:#A8552F;clip-path:polygon(50% 0,100% 100%,0 100%)"></i><span data-i18n="mem.leg.pos">effet positif significatif</span></li>
+                            <li><i style="background:#A8552F;clip-path:polygon(0 0,100% 0,50% 100%)"></i><span data-i18n="mem.leg.neg">effet négatif significatif</span></li>
+                            <li><i style="border:1.8px solid #3E7CA6;border-radius:50%"></i><span data-i18n="mem.leg.ns">non significatif</span></li>
+                            <li data-i18n="mem.leg.stars">* p &lt; 0,10 · ** p &lt; 0,05 · *** p &lt; 0,01</li>
+                        </ul>
+                    </div>
+                    <p class="links"><a class="btn" href="resultats.html" data-i18n="mem.s4.more">Tous les résultats, avec le simulateur de probabilités</a></p>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+        </section>
 
-</main>
+        <!-- 05 Lecture -->
+        <section class="band alt">
+            <div class="wrap">
+                <div>
+                    <h2 data-i18n="mem.s5.h">Ce qu'il faut retenir.</h2>
+                    <p class="lead" data-i18n="mem.s5.lead">05 · Lecture</p>
+                </div>
+                <div data-i18n-num>
+                    <article class="work">
+                        <h3 data-i18n="mem.s5.y3.h">Y3 · Assurance : la connaissance joue</h3>
+                        <p data-i18n="mem.s5.y3.p">Dix points de plus sur le score de connaissance subjective multiplient par 1,57 environ les chances d'être plus favorable. Perception du danger et revenu vont dans le même sens. Levier : communiquer sur le régime CatNat, le Fonds Barnier et les conditions d'éligibilité.</p>
+                    </article>
+                    <article class="work">
+                        <h3 data-i18n="mem.s5.y2.h">Y2 · Logement : le contexte prime</h3>
+                        <p data-i18n="mem.s5.y2.p">Aucun score cognitif n'est significatif. Résidence principale (OR = 2,64), confiance dans les décideurs locaux (1,86) et norme sociale (2,09) portent l'explication. Levier : dispositifs participatifs et aides financières lisibles.</p>
+                    </article>
+                    <article class="work">
+                        <h3 data-i18n="mem.s5.y5.h">Y5 · Ouvrages : la logique s'inverse</h3>
+                        <p data-i18n="mem.s5.y5.p">Les ménages les mieux informés sont plus critiques (OR = 0,97 par point de X2). Plus on habite près de la mer, plus on accepte les ouvrages. Levier : parler clairement de leurs limites, coût d'entretien compris.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-<footer>
-  <div class="wrap">
-    <span>© <span class="year">2026</span> Samuel Le Nenes</span>
-    <span>Hébergé sur GitHub Pages</span>
-  </div>
-</footer>
+        <!-- 06 Tableau -->
+        <section class="band">
+            <div class="wrap">
+                <div>
+                    <h2 data-i18n="mem.s6.h">Les odds ratios en détail.</h2>
+                    <p class="lead" data-i18n="mem.s6.lead">06 · Tableau 1</p>
+                </div>
+                <div>
+                    <div class="table-wrap" data-i18n-num>
+                        <table>
+                            <caption class="figcap" style="caption-side:bottom;text-align:left" data-i18n="mem.tab.cap">▲ effet positif significatif · ▼ effet négatif significatif · * p &lt; 0,10 · ** p &lt; 0,05 · *** p &lt; 0,01 · estimations sous R</caption>
+                            <thead>
+                                <tr><th scope="col" data-i18n="mem.th.var">Variable explicative</th><th scope="col" class="n" data-i18n="mem.th.y2">Y2 · logement</th><th scope="col" class="n" data-i18n="mem.th.y3">Y3 · assurance</th><th scope="col" class="n" data-i18n="mem.th.y5">Y5 · ouvrages</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr class="grp"><td colspan="4" data-i18n="mem.g1">Dimensions cognitives</td></tr>
+                                <tr><td data-i18n="mem.r.x1">Connaissance objective (X1)</td><td class="n">1,01</td><td class="n">1,02</td><td class="n" data-i18n="mem.excl">exclu</td></tr>
+                                <tr><td data-i18n="mem.r.x2">Connaissance subjective (X2)</td><td class="n">0,99</td><td class="n up">▲ 1,05***</td><td class="n down">▼ 0,97**</td></tr>
+                                <tr><td data-i18n="mem.r.x3">Perception du danger (X3)</td><td class="n">1,03</td><td class="n up">▲ 1,04**</td><td class="n">1,02</td></tr>
+                                <tr><td data-i18n="mem.r.x4">Capacité d'agir perçue (X4)</td><td class="n">1,03</td><td class="n down">▼ 0,97*</td><td class="n">0,99</td></tr>
+                                <tr class="grp"><td colspan="4" data-i18n="mem.g2">Situation résidentielle et économique</td></tr>
+                                <tr><td data-i18n="mem.r.resid">Résidence principale</td><td class="n up">▲ 2,64**</td><td class="n down">▼ 0,32**</td><td class="n up">▲ 2,44*</td></tr>
+                                <tr><td data-i18n="mem.r.prop">Propriétaire</td><td class="n down">▼ 0,46*</td><td class="n">1,22</td><td class="n">1,98</td></tr>
+                                <tr><td data-i18n="mem.r.rev">Revenu du ménage</td><td class="n">1,15</td><td class="n up">▲ 1,44**</td><td class="n">0,86</td></tr>
+                                <tr><td data-i18n="mem.r.dist">Distance à la mer</td><td class="n">0,83</td><td class="n">0,93</td><td class="n down">▼ 0,74**</td></tr>
+                                <tr class="grp"><td colspan="4" data-i18n="mem.g3">Confiance, normes et expérience</td></tr>
+                                <tr><td data-i18n="mem.r.conf">Confiance dans les décideurs</td><td class="n up">▲ 1,86**</td><td class="n">1,38</td><td class="n">1,40</td></tr>
+                                <tr><td data-i18n="mem.r.norm">Norme majoritaire perçue</td><td class="n up">▲ 2,09*</td><td class="n">0,84</td><td class="n" data-i18n="mem.excl">exclu</td></tr>
+                                <tr><td data-i18n="mem.r.exp">Expérience passée du risque</td><td class="n">0,92</td><td class="n">0,90</td><td class="n">1,12</td></tr>
+                                <tr class="grp"><td colspan="4" data-i18n="mem.g4">Qualité des modèles</td></tr>
+                                <tr><td data-i18n="mem.r.r2">Pseudo-R² (McFadden)</td><td class="n">0,113</td><td class="n">0,151</td><td class="n">0,083</td></tr>
+                                <tr><td data-i18n="mem.r.lrt">Test du rapport de vraisemblance</td><td class="n">p = 0,004</td><td class="n">p &lt; 0,001</td><td class="n">p = 0,048</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<script src="assets/js/main.js"></script>
+        <!-- 07 Limites -->
+        <section class="band alt">
+            <div class="wrap">
+                <div>
+                    <h2 data-i18n="mem.s7.h">Ce que l'étude ne dit pas.</h2>
+                    <p class="lead" data-i18n="mem.s7.lead">07 · Limites</p>
+                </div>
+                <div class="body">
+                    <p data-i18n="mem.s7.p1">L'échantillon est modeste et probablement composé de ménages déjà sensibilisés au risque. Les modèles établissent des associations, pas des relations causales.</p>
+                    <p data-i18n="mem.s7.p2">Une enquête répétée dans le temps, avec un volet qualitatif, permettrait de consolider les conclusions. Les résultats invitent aussi à intégrer explicitement la confiance institutionnelle, la norme sociale et le statut résidentiel au cadre PADM.</p>
+                    <div class="doc">
+                        <a href="assets/docs/Note_synthese_M1_ECAP_Le_Nenes.pdf" data-href-en="assets/docs/Note_synthese_M1_ECAP_Le_Nenes_EN.pdf" target="_blank" rel="noopener"><img src="assets/img/note-p1-fr.png" data-src-en="assets/img/note-p1-en.png" width="300" height="389" alt="Première page de la note de synthèse" data-i18n-attr="alt:mem.doc.alt"></a>
+                        <div>
+                            <h3 data-i18n="mem.doc.h">La note complète</h3>
+                            <p class="small" data-i18n="mem.doc.p">4 pages, avec les recommandations détaillées pour les décideurs publics.</p>
+                            <p class="links">
+                                <a class="cta solid" href="assets/docs/Note_synthese_M1_ECAP_Le_Nenes.pdf" data-href-en="assets/docs/Note_synthese_M1_ECAP_Le_Nenes_EN.pdf" download data-i18n="mem.doc.dl">Télécharger la note</a>
+                                <a class="cta" href="assets/docs/Memoire_M1_ECAP_Le_Nenes.pdf" target="_blank" rel="noopener" data-i18n="mem.cta.thesis">Mémoire complet (PDF, 5,4 Mo)</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="wrap">Samuel Le Nenes, 2026</div>
+    </footer>
+
 </body>
 </html>

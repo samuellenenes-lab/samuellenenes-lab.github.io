@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="res.title">Résultats interactifs | Samuel Le Nenes</title>
+    <meta name="description" content="Résultats interactifs du mémoire de M1 ECAP : échantillon de 147 ménages, scores de connaissance et de perception, acceptation de sept mesures et trois modèles logit ordonnés." data-i18n-attr="content:res.desc">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/resultats.js" defer></script>
+</head>
+<body>
+
+    <a class="skip" href="#contenu" data-i18n="a11y.skip">Aller au contenu</a>
+    <nav class="navbar" aria-label="Navigation principale" data-i18n-attr="aria-label:a11y.nav">
+        <div class="wrap">
+            <a href="index.html" class="brand">Samuel Le Nenes</a>
+            <ul class="nav-links">
+                <li class="nav-home"><a href="index.html" data-i18n="nav.home">Accueil</a></li>
+                <li><a href="cv.html" data-i18n="nav.cv">CV</a></li>
+                <li><a href="index.html#experiences" data-i18n="nav.exp">Expériences</a></li>
+                <li><a href="index.html#travaux" class="active" data-i18n="nav.work">Travaux</a></li>
+                <li><a href="index.html#recommandations" data-i18n="nav.reco">Recommandations</a></li>
+                <li><a href="index.html#competences" data-i18n="nav.skills">Compétences</a></li>
+                <li><a href="index.html#contact" data-i18n="nav.contact">Contact</a></li>
+            </ul>
+            <div class="lang">
+                <button type="button" class="lang-btn" id="lang-btn" aria-haspopup="true" aria-expanded="false" aria-controls="lang-menu" aria-label="Langue : français. Changer de langue" data-i18n-attr="aria-label:lang.button">
+                    <svg class="flag" data-flag="fr" viewBox="0 0 3 2" aria-hidden="true" focusable="false"><rect width="1" height="2" fill="#002654"/><rect x="1" width="1" height="2" fill="#ffffff"/><rect x="2" width="1" height="2" fill="#ce1126"/></svg>
+                    <svg class="flag" data-flag="en" hidden viewBox="0 0 60 30" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><clipPath id="uk-a"><path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z"/></clipPath><rect width="60" height="30" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#ffffff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#uk-a)" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#ffffff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></svg>
+                    <span class="code" data-lang-code>FR</span>
+                    <svg class="caret" viewBox="0 0 10 10" aria-hidden="true" focusable="false"><path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+                </button>
+                <ul class="lang-menu" id="lang-menu" role="menu" aria-labelledby="lang-btn" hidden>
+                    <li role="none"><button type="button" role="menuitemradio" aria-checked="true" data-set-lang="fr" lang="fr"><svg class="flag" viewBox="0 0 3 2" aria-hidden="true" focusable="false"><rect width="1" height="2" fill="#002654"/><rect x="1" width="1" height="2" fill="#ffffff"/><rect x="2" width="1" height="2" fill="#ce1126"/></svg><span class="code">FR</span>Français</button></li>
+                    <li role="none"><button type="button" role="menuitemradio" aria-checked="false" data-set-lang="en" lang="en"><svg class="flag" viewBox="0 0 60 30" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><clipPath id="uk-b"><path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z"/></clipPath><rect width="60" height="30" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#ffffff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#uk-b)" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#ffffff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></svg><span class="code">EN</span>English</button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main id="contenu">
+        <section class="wrap page-head">
+            <p><span class="badge" data-i18n="res.kicker">Mémoire de M1 ECAP · juin 2026</span></p>
+            <h1 data-i18n="res.h1">Résultats interactifs</h1>
+            <p data-i18n="res.sub">Connaissance, perception et acceptation du risque côtier par les ménages du Croisic et de Batz-sur-Mer. Cette page reprend le tableau de bord présenté en soutenance : l'échantillon, les scores X1 à X4, l'acceptation des sept mesures, puis les trois modèles logit ordonnés.</p>
+            <p class="links">
+                <a class="cta" href="memoire.html" data-i18n="res.cta.summary">Synthèse du mémoire</a>
+                <a class="cta" href="assets/docs/Memoire_M1_ECAP_Le_Nenes.pdf" target="_blank" rel="noopener" data-i18n="mem.cta.thesis">Mémoire complet (PDF, 5,4 Mo)</a>
+                <a class="cta" href="assets/docs/Note_synthese_M1_ECAP_Le_Nenes.pdf" data-href-en="assets/docs/Note_synthese_M1_ECAP_Le_Nenes_EN.pdf" target="_blank" rel="noopener" data-i18n="mem.cta.note">Note de synthèse (PDF, 4 p.)</a>
+            </p>
+        </section>
+
+        <section class="band alt" style="padding-top:40px">
+            <div class="wrap" style="display:block">
+                <div class="tabs res-tabs" role="tablist" aria-label="Rubriques des résultats" data-i18n-attr="aria-label:res.tabs">
+                    <button type="button" role="tab" id="t-ech" aria-controls="p-ech" aria-selected="true" data-i18n="res.tab.ech">Échantillon</button>
+                    <button type="button" role="tab" id="t-scores" aria-controls="p-scores" aria-selected="false" tabindex="-1">Scores X1-X4</button>
+                    <button type="button" role="tab" id="t-y" aria-controls="p-y" aria-selected="false" tabindex="-1" data-i18n="res.tab.y">Acceptation Y</button>
+                    <button type="button" role="tab" id="t-Y3" aria-controls="p-Y3" aria-selected="false" tabindex="-1" data-i18n="res.tab.Y3">Y3 · Assurance</button>
+                    <button type="button" role="tab" id="t-Y2" aria-controls="p-Y2" aria-selected="false" tabindex="-1" data-i18n="res.tab.Y2">Y2 · Logement</button>
+                    <button type="button" role="tab" id="t-Y5" aria-controls="p-Y5" aria-selected="false" tabindex="-1" data-i18n="res.tab.Y5">Y5 · Ouvrages</button>
+                </div>
+
+                <p class="small muted" data-res-status data-i18n="res.loading">Chargement des résultats…</p>
+
+                <!-- ================= Échantillon ================= -->
+                <div class="panel" role="tabpanel" id="p-ech" aria-labelledby="t-ech" tabindex="0">
+                    <div class="kpis" data-i18n-num>
+                        <div class="kpi"><div class="val">147</div><div class="lab" data-i18n="res.ech.k1.lab">Ménages répondants</div><div class="det" data-i18n="res.ech.k1.det">questionnaire en ligne, 89 questions</div></div>
+                        <div class="kpi"><div class="val">76 %</div><div class="lab" data-i18n="res.ech.k2.lab">Résidents principaux</div><div class="det" data-i18n="res.ech.k2.det">et 69 % de propriétaires</div></div>
+                        <div class="kpi"><div class="val">42 %</div><div class="lab" data-i18n="res.ech.k3.lab">À moins de 500 m de la côte</div><div class="det" data-i18n="res.ech.k3.det">dont 24 % à moins de 100 m</div></div>
+                        <div class="kpi accent"><div class="val">75 %</div><div class="lab" data-i18n="res.ech.k4.lab">De femmes</div><div class="det" data-i18n="res.ech.k4.det">surreprésentées dans l'échantillon</div></div>
+                    </div>
+                    <div class="res-grid">
+                        <div class="card">
+                            <h3 data-i18n="res.ech.c1.h">Distribution d'une caractéristique de l'échantillon</h3>
+                            <p class="note" data-i18n="res.source">Source : enquête personnelle, Le Croisic et Batz-sur-Mer, avril-mai 2026 (n = 147).</p>
+                            <label class="field"><span data-i18n="res.ech.select">Caractéristique</span><select id="sel-ech"></select></label>
+                            <div class="chart" id="ch-ech"></div>
+                            <p class="figcap" data-lang-only="en" hidden>Bac: French secondary school diploma; Bac+n: n years of higher education.</p>
+                        </div>
+                        <div>
+                            <div class="card">
+                                <h3 data-i18n="res.ech.c2.h">Effectifs détaillés</h3>
+                                <div class="table-wrap" id="tb-ech"></div>
+                            </div>
+                            <div class="interpretation" data-i18n="res.ech.interp"><b>Limites de l'échantillon.</b> Femmes (74,8 %) et plus de 40 ans (82 %) surreprésentés ; 73 % de diplômés du supérieur ; auto-sélection probable liée à la diffusion en ligne. Les résultats se lisent comme ceux d'un public déjà sensibilisé, cohérent toutefois avec la démographie locale des deux communes.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ================= Scores ================= -->
+                <div class="panel" role="tabpanel" id="p-scores" aria-labelledby="t-scores" tabindex="0" hidden>
+                    <div class="kpis" data-i18n-num>
+                        <div class="kpi"><div class="val">74,4</div><div class="lab" data-i18n="res.sc.k1.lab">X1 · Connaissance objective</div><div class="det" data-i18n="res.sc.k1.det">médiane 73,3 (échelle 0-100)</div></div>
+                        <div class="kpi accent"><div class="val">38,4</div><div class="lab" data-i18n="res.sc.k2.lab">X2 · Connaissance subjective</div><div class="det" data-i18n="res.sc.k2.det">médiane 35,4 (échelle 0-100)</div></div>
+                        <div class="kpi"><div class="val">36 pts</div><div class="lab" data-i18n="res.sc.k3.lab">Écart X1 − X2</div><div class="det" data-i18n="res.sc.k3.det">les ménages en savent plus qu'ils ne le pensent</div></div>
+                        <div class="kpi"><div class="val">≈ 60</div><div class="lab" data-i18n="res.sc.k4.lab">X3 et X4</div><div class="det" data-i18n="res.sc.k4.det">perception du danger 64,5 · capacité d'agir 59,4</div></div>
+                    </div>
+                    <div class="res-grid">
+                        <div class="card">
+                            <h3 data-i18n="res.sc.c1.h">Distribution des quatre scores standardisés (0-100)</h3>
+                            <p class="note" data-i18n="res.sc.c1.note">Trait plein terracotta : moyenne · trait pointillé marine : médiane. Source : enquête personnelle, Le Croisic et Batz-sur-Mer, avril-mai 2026 (n = 147).</p>
+                            <div class="chart" id="ch-hist"></div>
+                        </div>
+                        <div class="card">
+                            <h3 data-i18n="res.sc.c3.h">Corrélations de Spearman entre scores</h3>
+                            <p class="note" data-i18n="res.sc.c3.note">Liées mais distinctes : appui empirique de H4 (confirmée).</p>
+                            <div class="chart" id="ch-heat" style="max-width:340px"></div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3 data-i18n="res.sc.c2.h">Statistiques descriptives (Tableau 3.2 du mémoire)</h3>
+                        <div class="table-wrap" id="tb-scores"></div>
+                    </div>
+                    <div class="interpretation" data-i18n="res.sc.interp"><b>Le résultat descriptif le plus frappant :</b> bonne connaissance factuelle (définitions, consignes) mais faible sentiment de maîtrise, en particulier sur les dispositifs publics (PPRL, PAPI, régime CatNat, Fonds Barnier). Implication : la communication publique devrait cibler les <b>outils</b>, pas le savoir factuel.<br><br><b>H4 confirmée (articulation entre dimensions) :</b> les quatre scores sont corrélés (de 0,12 à 0,55 au test de Spearman) mais restent distincts, et aucun VIF ne dépasse 2,5. Connaissance et perception ne se substituent donc pas l'une à l'autre : leurs effets doivent être estimés conjointement, en lien avec les déterminants résidentiels, institutionnels et sociaux, ce que confirment les trois modèles Y3, Y2 et Y5_V2.</div>
+                </div>
+
+                <!-- ================= Acceptation Y ================= -->
+                <div class="panel" role="tabpanel" id="p-y" aria-labelledby="t-y" tabindex="0" hidden>
+                    <div class="kpis" data-i18n-num>
+                        <div class="kpi"><div class="val">78,2 %</div><div class="lab" data-i18n="res.y.k1.lab">Favorables en moyenne</div><div class="det" data-i18n="res.y.k1.det">toutes mesures confondues</div></div>
+                        <div class="kpi"><div class="val">98,6 %</div><div class="lab" data-i18n="res.y.k2.lab">Y6 · Solutions nature</div><div class="det" data-i18n="res.y.k2.det">consensus quasi total : peu de variance à expliquer</div></div>
+                        <div class="kpi accent"><div class="val">38 / 38</div><div class="lab" data-i18n="res.y.k3.lab">Y3 · Assurance</div><div class="det" data-i18n="res.y.k3.det">seule mesure clivante de l'enquête</div></div>
+                        <div class="kpi"><div class="val">3</div><div class="lab" data-i18n="res.y.k4.lab">Variables modélisées</div><div class="det" data-i18n="res.y.k4.det">Y2, Y3 et Y5 : la variance utile</div></div>
+                    </div>
+                    <div class="res-grid">
+                        <div class="card">
+                            <h3 data-i18n="res.y.c1.h">Acceptation comparée des sept mesures (% des répondants)</h3>
+                            <p class="note" data-i18n="res.y.c1.note">Mesures triées par part de favorables (Figure 3.3 du mémoire). Source : enquête personnelle, Le Croisic et Batz-sur-Mer, avril-mai 2026 (n = 147).</p>
+                            <div class="chart" id="ch-likert"></div>
+                            <ul class="legend" id="lg-likert"></ul>
+                        </div>
+                        <div>
+                            <div class="interpretation" data-i18n="res.y.interp"><b>Pourquoi Y2, Y3 et Y5 ?</b> Une mesure approuvée à 98 % laisse peu de variance à expliquer. Y3 couvre toutes les modalités (38,8 % favorables, 38,1 % défavorables), Y2 compte 25,9 % de neutres, Y5 conserve 23 % de neutres ou défavorables. Y1, Y4, Y6, Y7 restent en analyse descriptive (et en logit binaire complémentaire, annexe 16 du mémoire).</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3 data-i18n="res.y.c2.h">Positionnement des sept variables Y (Tableau 3.3)</h3>
+                        <div class="table-wrap" id="tb-y"></div>
+                    </div>
+                </div>
+
+                <!-- ================= Modèles ================= -->
+                <div class="panel" role="tabpanel" id="p-Y3" aria-labelledby="t-Y3" tabindex="0" hidden data-model="Y3">
+                    <div class="kpis" data-i18n-num>
+                        <div class="kpi accent"><div class="val">× 1,57</div><div class="lab" data-i18n="res.Y3.k1.lab">Chances d'être plus favorable</div><div class="det" data-i18n="res.Y3.k1.det">pour + 10 points de connaissance subjective (OR = 1,05 ; p = 0,003)</div></div>
+                        <div class="kpi"><div class="val">OR = 1,04</div><div class="lab" data-i18n="res.Y3.k2.lab">Perception du danger (X3)</div><div class="det" data-i18n="res.Y3.k2.det">significatif à 5 % (p = 0,029)</div></div>
+                        <div class="kpi"><div class="val" data-fill="r2"></div><div class="lab" data-i18n="res.m.r2">Pseudo-R² de McFadden</div><div class="det" data-fill="lrt"></div></div>
+                        <div class="kpi"><div class="val" data-fill="pred"></div><div class="lab" data-i18n="res.m.pred">Bonne prédiction</div><div class="det" data-fill="base"></div></div>
+                    </div>
+                    <div class="res-grid">
+                        <div class="card">
+                            <h3 data-i18n="res.m.forest.h">Odds ratios et intervalles de confiance à 95 %</h3>
+                            <p class="note" data-i18n="res.m.forest.note">Logit ordonné (MASS::polr), 4 modalités regroupées. En terracotta : variables significatives au seuil de 10 %. Échelle logarithmique (OR &gt; 1 : acceptation accrue).</p>
+                            <div class="chart" data-fill="forest"></div>
+                            <ul class="legend">
+                                <li><i style="background:#A8552F;clip-path:polygon(50% 0,100% 100%,0 100%)"></i><span data-i18n="mem.leg.pos">effet positif significatif</span></li>
+                                <li><i style="background:#A8552F;clip-path:polygon(0 0,100% 0,50% 100%)"></i><span data-i18n="mem.leg.neg">effet négatif significatif</span></li>
+                                <li><i style="border:1.8px solid #3E7CA6;border-radius:50%"></i><span data-i18n="mem.leg.ns">non significatif</span></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <div class="card">
+                                <h3 data-i18n="res.m.sim.h">Effet d'une variable sur les probabilités prédites</h3>
+                                <p class="note" data-i18n="res.m.sim.note">Toutes les autres variables sont fixées à leur moyenne (lecture toutes choses égales par ailleurs).</p>
+                                <label class="field"><span data-i18n="res.m.sim.select">Variable</span><select data-fill="simsel"></select></label>
+                                <div class="chart" data-fill="sim"></div>
+                                <ul class="legend" data-fill="simlegend"></ul>
+                            </div>
+                            <div class="interpretation" data-i18n="res.Y3.interp"><b>Le modèle qui valide le plus clairement la problématique.</b> La connaissance subjective (OR = 1,05 ; p = 0,003) et la perception du danger (OR = 1,04 ; p = 0,029) augmentent l'acceptation : H1 et H2 sont validées sur cette mesure. Le revenu joue positivement (OR = 1,44 ; p = 0,026). Résultat contre-intuitif : la résidence principale ressort négativement (OR = 0,32 ; p = 0,017), les résidences secondaires exposées étant déjà entrées dans une logique assurantielle. À noter : c'est la connaissance <b>subjective</b> qui pèse, jamais le savoir vérifiable X1.</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3 data-i18n="res.m.table.h">Tableau complet des coefficients (odds ratios)</h3>
+                        <p class="note" data-i18n="res.m.table.note">* p &lt; 0,10 · ** p &lt; 0,05 · *** p &lt; 0,01 (p-values identiques à celles du mémoire).</p>
+                        <div class="table-wrap" data-fill="table"></div>
+                    </div>
+                </div>
+
+                <div class="panel" role="tabpanel" id="p-Y2" aria-labelledby="t-Y2" tabindex="0" hidden data-model="Y2">
+                    <div class="kpis" data-i18n-num>
+                        <div class="kpi accent"><div class="val">OR = 2,64</div><div class="lab" data-i18n="res.Y2.k1.lab">Résidence principale</div><div class="det" data-i18n="res.Y2.k1.det">2,6 fois plus de chances d'accepter (p = 0,033)</div></div>
+                        <div class="kpi"><div class="val">OR = 1,86</div><div class="lab" data-i18n="res.Y2.k2.lab">Confiance décideurs locaux</div><div class="det" data-i18n="res.Y2.k2.det">significatif à 5 % (p = 0,025)</div></div>
+                        <div class="kpi"><div class="val" data-fill="r2"></div><div class="lab" data-i18n="res.m.r2">Pseudo-R² de McFadden</div><div class="det" data-fill="lrt"></div></div>
+                        <div class="kpi"><div class="val" data-fill="pred"></div><div class="lab" data-i18n="res.m.pred">Bonne prédiction</div><div class="det" data-fill="base"></div></div>
+                    </div>
+                    <div class="res-grid">
+                        <div class="card">
+                            <h3 data-i18n="res.m.forest.h">Odds ratios et intervalles de confiance à 95 %</h3>
+                            <p class="note" data-i18n="res.m.forest.note">Logit ordonné (MASS::polr), 4 modalités regroupées. En terracotta : variables significatives au seuil de 10 %. Échelle logarithmique (OR &gt; 1 : acceptation accrue).</p>
+                            <div class="chart" data-fill="forest"></div>
+                            <ul class="legend">
+                                <li><i style="background:#A8552F;clip-path:polygon(50% 0,100% 100%,0 100%)"></i><span data-i18n="mem.leg.pos">effet positif significatif</span></li>
+                                <li><i style="background:#A8552F;clip-path:polygon(0 0,100% 0,50% 100%)"></i><span data-i18n="mem.leg.neg">effet négatif significatif</span></li>
+                                <li><i style="border:1.8px solid #3E7CA6;border-radius:50%"></i><span data-i18n="mem.leg.ns">non significatif</span></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <div class="card">
+                                <h3 data-i18n="res.m.sim.h">Effet d'une variable sur les probabilités prédites</h3>
+                                <p class="note" data-i18n="res.m.sim.note">Toutes les autres variables sont fixées à leur moyenne (lecture toutes choses égales par ailleurs).</p>
+                                <label class="field"><span data-i18n="res.m.sim.select">Variable</span><select data-fill="simsel"></select></label>
+                                <div class="chart" data-fill="sim"></div>
+                                <ul class="legend" data-fill="simlegend"></ul>
+                            </div>
+                            <div class="interpretation" data-i18n="res.Y2.interp"><b>Aucun des quatre scores cognitifs n'est significatif.</b> L'acceptation de l'adaptation du logement est portée par la situation concrète et l'environnement social : résidence principale (OR = 2,64), confiance dans les décideurs (OR = 1,86), norme majoritaire perçue à la limite de la significativité (OR = 2,09 ; p = 0,051). L'hypothèse H3 (auto-efficacité, modèle PADM) n'est <b>pas confirmée</b> alors qu'on l'attendait précisément ici. Le statut de propriétaire ressort à la marge avec un signe négatif (OR = 0,46 ; p = 0,098), la résidence principale captant une part de l'effet attendu.</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3 data-i18n="res.m.table.h">Tableau complet des coefficients (odds ratios)</h3>
+                        <p class="note" data-i18n="res.m.table.note">* p &lt; 0,10 · ** p &lt; 0,05 · *** p &lt; 0,01 (p-values identiques à celles du mémoire).</p>
+                        <div class="table-wrap" data-fill="table"></div>
+                    </div>
+                </div>
+
+                <div class="panel" role="tabpanel" id="p-Y5" aria-labelledby="t-Y5" tabindex="0" hidden data-model="Y5">
+                    <div class="kpis" data-i18n-num>
+                        <div class="kpi accent"><div class="val">OR = 0,74</div><div class="lab" data-i18n="res.Y5.k1.lab">Distance à la mer</div><div class="det" data-i18n="res.Y5.k1.det">plus on s'éloigne, moins on est favorable (p = 0,016)</div></div>
+                        <div class="kpi"><div class="val">OR = 0,97</div><div class="lab" data-i18n="res.Y5.k2.lab">Connaissance subjective (X2)</div><div class="det" data-i18n="res.Y5.k2.det">les mieux informés sont plus critiques (p = 0,013)</div></div>
+                        <div class="kpi"><div class="val" data-fill="r2"></div><div class="lab" data-i18n="res.m.r2">Pseudo-R² de McFadden</div><div class="det" data-fill="lrt"></div></div>
+                        <div class="kpi"><div class="val" data-fill="pred"></div><div class="lab" data-i18n="res.m.pred">Bonne prédiction</div><div class="det" data-fill="base"></div></div>
+                    </div>
+                    <div class="res-grid">
+                        <div class="card">
+                            <h3 data-i18n="res.m.forest.h">Odds ratios et intervalles de confiance à 95 %</h3>
+                            <p class="note" data-i18n="res.m.forest.note">Logit ordonné (MASS::polr), 4 modalités regroupées. En terracotta : variables significatives au seuil de 10 %. Échelle logarithmique (OR &gt; 1 : acceptation accrue).</p>
+                            <div class="chart" data-fill="forest"></div>
+                            <ul class="legend">
+                                <li><i style="background:#A8552F;clip-path:polygon(50% 0,100% 100%,0 100%)"></i><span data-i18n="mem.leg.pos">effet positif significatif</span></li>
+                                <li><i style="background:#A8552F;clip-path:polygon(0 0,100% 0,50% 100%)"></i><span data-i18n="mem.leg.neg">effet négatif significatif</span></li>
+                                <li><i style="border:1.8px solid #3E7CA6;border-radius:50%"></i><span data-i18n="mem.leg.ns">non significatif</span></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <div class="card">
+                                <h3 data-i18n="res.m.sim.h">Effet d'une variable sur les probabilités prédites</h3>
+                                <p class="note" data-i18n="res.m.sim.note">Toutes les autres variables sont fixées à leur moyenne (lecture toutes choses égales par ailleurs).</p>
+                                <label class="field"><span data-i18n="res.m.sim.select">Variable</span><select data-fill="simsel"></select></label>
+                                <div class="chart" data-fill="sim"></div>
+                                <ul class="legend" data-fill="simlegend"></ul>
+                            </div>
+                            <div class="interpretation" data-i18n="res.Y5.interp"><b>Ajustement méthodologique :</b> le test de Brant rejetait l'égalité des pentes sur le modèle complet (Khi² = 98,2 ; p &lt; 0,001). Conformément à la solution du cours (Travers, 2025-2026), X1 et la norme majoritaire ont été exclues : la variante Y5_V2 (18 variables) valide l'hypothèse (Omnibus p = 0,483). Les ouvrages fonctionnent comme des <b>biens publics de proximité</b> : on les soutient d'abord parce qu'on en bénéficie (distance à la mer, résidence principale OR = 2,44 ; p = 0,056), tandis que les ménages les mieux informés portent un regard critique, cohérent avec la littérature sur le faux sentiment de sécurité (Naud).</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3 data-i18n="res.m.table.h">Tableau complet des coefficients (odds ratios)</h3>
+                        <p class="note" data-i18n="res.m.table.note">* p &lt; 0,10 · ** p &lt; 0,05 · *** p &lt; 0,01 (p-values identiques à celles du mémoire).</p>
+                        <div class="table-wrap" data-fill="table"></div>
+                    </div>
+                </div>
+
+                <p class="small muted" style="margin-top:1rem" data-i18n="res.footer">Mémoire de M1 ECAP, IAE Nantes, Nantes Université. Chiffres agrégés calculés en R avec les sections 2 à 4 du tableau de bord de soutenance (app.R) ; aucune réponse individuelle n'est publiée.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="wrap">Samuel Le Nenes, 2026</div>
+    </footer>
+
+</body>
+</html>
