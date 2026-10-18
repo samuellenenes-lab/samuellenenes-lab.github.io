@@ -285,7 +285,7 @@ en: {
     "res.y.c2.h": "Position of the seven Y variables (Table 3.3)",
     "res.y.interp": "<b>Why Y2, Y3 and Y5?</b> A measure approved by 98% of respondents leaves little variance to explain. Y3 spans all categories (38.8% in favour, 38.1% opposed), Y2 has 25.9% neutral answers, and Y5 still has 23% neutral or opposed. Y1, Y4, Y6 and Y7 are analysed descriptively (and with a complementary binary logit, appendix 16 of the thesis).",
     "res.Y3.k1.lab": "Odds of being more favourable",
-    "res.Y3.k1.det": "for +10 points of subjective knowledge (OR = 1.05; p = 0.003)",
+    "res.Y3.k1.det": "for +10 points of subjective knowledge (OR = 1.046 per point; p = 0.003)",
     "res.Y3.k2.lab": "Perceived danger (X3)",
     "res.Y3.k2.det": "significant at 5% (p = 0.029)",
     "res.Y3.interp": "<b>The model that most clearly supports the research question.</b> Subjective knowledge (OR = 1.05; p = 0.003) and perceived danger (OR = 1.04; p = 0.029) increase acceptance: H1 and H2 are supported for this measure. Income has a positive effect (OR = 1.44; p = 0.026). A counter-intuitive result: main residence comes out negative (OR = 0.32; p = 0.017), since exposed second homes have already turned to insurance. Note that it is <b>subjective</b> knowledge that matters, never the verifiable knowledge measured by X1.",
